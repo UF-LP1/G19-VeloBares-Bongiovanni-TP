@@ -11,7 +11,7 @@
 using namespace std;
 class Cliente {
 public: 
-    Cliente(string nombrec, string domicilio, unsigned int telefono, const string dni, bool permiso, Articulos.lista);
+    Cliente(string nombrec, string domicilio, unsigned int telefono, const string dni, bool permiso, list<Articulos> Lista);
     ~Cliente();
 /**
  * @param telefono
@@ -26,15 +26,17 @@ bool get(bool permiso);
 /**
  * @param unsigned int num-art
  */
-void comprarart( unsigned int num-art);
+void comprarart( unsigned int numart);
     
 void pedirempleados();
     
 /**
  * @param Duenyo.cobrar
  */
-void pagar(void Duenyo.cobrar);
+
     
+void pagar(Duenyo josecito);
+
 string getnombrec();
     
 string getubicacion();
@@ -42,8 +44,11 @@ string getubicacion();
 /**
  * @param Articulos.precio
  */
-void verprecio(void Articulos.precio);
+
     
+void verprecio(Articulos precioArt);
+
+
 void agregaralista();
 private: 
     string nombrec;
@@ -51,8 +56,8 @@ private:
     unsigned int telefono;
     const string dni;
     bool permiso;
-    list <Articulos>;
+    list<Articulos> Lista;
 };
 
-Articulos getlistaArt();
+
 #endif //_CLIENTE_H

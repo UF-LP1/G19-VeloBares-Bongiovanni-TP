@@ -8,3 +8,11 @@
 /**
  * ArtCerrajeria implementation
  */
+
+ArtCerrajeria::ArtCerrajeria()
+{
+}
+
+ArtCerrajeria::~ArtCerrajeria()
+{
+}

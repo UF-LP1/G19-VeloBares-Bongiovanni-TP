@@ -11,12 +11,13 @@
 
 class ArtHerramienta: public Articulos {
 public: 
-    void Attribute1;
+    ArtHerramienta();
+    ~ArtHerramienta();
     
 /**
  * @param unsigned int num-art
  */
-void alquilar(void unsigned int num-art);
+void alquilar( unsigned int numart);
 };
 
 #endif //_ARTHERRAMIENTA_H

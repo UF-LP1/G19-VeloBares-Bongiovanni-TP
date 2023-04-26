@@ -10,7 +10,7 @@
  */
 
 
-Cliente::Cliente(string nombrec, string domicilio, unsigned int telefono, const string dni, bool permiso, Articulos.lista)
+Cliente::Cliente(string nombrec, string domicilio, unsigned int telefono, const string dni, bool permiso, list<Articulos> Lista)
 {
 }
 
@@ -49,6 +49,10 @@ bool Cliente::get(bool permiso)
     return false;
 }
 
+void Cliente::comprarart(unsigned int numart)
+{
+}
+
 /**
  * @return void
  */
@@ -60,7 +64,9 @@ void Cliente::pedirempleados() {
  * @param Duenyo.cobrar
  * @return void
  */
-void Cliente::pagar(void Duenyo.cobrar) {
+void Cliente::pagar( Duenyo josecito) {
+
+    josecito.generarPresupuesto(list<Articulos> Lista, bool descuento, unsigned int precio);
     return;
 }
 
@@ -82,8 +88,8 @@ string Cliente::getubicacion() {
  * @param Articulos.precio
  * @return void
  */
-void Cliente::verprecio(void Articulos.precio) {
-    return;
+void Cliente::verprecio(Articulos precioArt) {
+    return; 
 }
 
 /**
@@ -93,7 +99,4 @@ void Cliente::agregaralista() {
     return;
 }
 
-Articulos getlistaArt()
-{
-    return Articulos();
-}
+

@@ -11,7 +11,8 @@
 
 class ArtCerrajeria: public Articulos {
 public: 
-    void Attribute1;
+    ArtCerrajeria();
+    ~ArtCerrajeria();
 };
 
 #endif //_ARTCERRAJERIA_H

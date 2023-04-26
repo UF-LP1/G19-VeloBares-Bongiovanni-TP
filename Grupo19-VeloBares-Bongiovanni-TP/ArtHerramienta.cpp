@@ -14,6 +14,16 @@
  * @param unsigned int num-art
  * @return void
  */
-void ArtHerramienta::alquilar(void unsigned int num-art) {
-    return;
+
+
+ArtHerramienta::ArtHerramienta()
+{
+}
+
+ArtHerramienta::~ArtHerramienta()
+{
+}
+
+void ArtHerramienta::alquilar(unsigned int numart)
+{
 }

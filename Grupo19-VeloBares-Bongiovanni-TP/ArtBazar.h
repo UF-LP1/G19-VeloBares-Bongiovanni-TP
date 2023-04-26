@@ -11,12 +11,13 @@
 
 class ArtBazar: public Articulos {
 public: 
-    void Attribute1;
+   ArtBazar();
+   ~ArtBazar();
     
 /**
  * @param enum bazar estado
  */
-void comprobarestado(void enum bazar estado);
+void comprobarestado( enum bazar estado);
 private: 
     enum bazar estado;
 };

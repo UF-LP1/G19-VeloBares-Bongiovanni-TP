@@ -8,3 +8,13 @@
 /**
  * Cables implementation
  */
+
+
+
+
+Cables::Cables()
+{
+}
+Cables::~Cables()
+{
+}

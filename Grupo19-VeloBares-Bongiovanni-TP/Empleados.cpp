@@ -9,10 +9,14 @@
  * Empleados implementation
  */
 
-Empleados(string nombree, string horarioatencion, unsigned int preciotrabajo, bool disponible, const unsigned int dnis, string apellidos, string duracion)
-{}
 
-~Empleados()
+Empleados::Empleados(string nombree, string horarioatencion, unsigned int preciotrabajo, bool disponible, const unsigned int dnis, string apellidos, string duracion)
+{
+}
+
+Empleados::~Empleados()
+{
+}
 
 /**
  * @param preciotrabajo

@@ -11,7 +11,8 @@
 
 class ArtElectricidad: public Articulos {
 public: 
-    void Attribute1;
+    ArtElectricidad();
+    ~ArtElectricidad();
     
 void probarfuncion();
 };

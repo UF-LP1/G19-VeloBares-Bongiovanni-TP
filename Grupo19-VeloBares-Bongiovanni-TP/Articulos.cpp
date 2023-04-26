@@ -23,7 +23,7 @@ void Articulos::set(unsigned int precio) {
  * @return unsigned int
  */
 unsigned int Articulos::get(unsigned int numart) {
-    return null;
+    return 0;
 }
 
 /**

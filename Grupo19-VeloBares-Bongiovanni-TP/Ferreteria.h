@@ -2,9 +2,11 @@
  * Project Untitled
  */
 
-#include <string>
+
 #ifndef _FERRETERIA_H
 #define _FERRETERIA_H
+#include "Empleados.h"
+
 using namespace std;
 
 class Ferreteria {

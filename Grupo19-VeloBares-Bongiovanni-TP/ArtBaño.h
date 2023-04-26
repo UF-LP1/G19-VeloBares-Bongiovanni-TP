@@ -9,14 +9,15 @@
 #include "Articulos.h"
 
 
-class ArtBaño: public Articulos {
+class ArtBanio: public Articulos {
 public: 
-    void Attribute1;
+    ArtBanio();
+    ~ArtBanio();
     
 /**
  * @param string color
  */
-void elegircolores(void string color);
+void elegircolores( string color);
 private: 
     string color;
 };

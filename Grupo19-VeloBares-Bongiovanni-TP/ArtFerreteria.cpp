@@ -14,6 +14,12 @@
  * @param envoltorio
  * @return bool
  */
-bool ArtFerreteria::chequearenvoltorio(void envoltorio) {
+ArtFerreteria::ArtFerreteria()
+{
+}
+ArtFerreteria::~ArtFerreteria()
+{
+}
+bool ArtFerreteria::chequearenvoltorio(bool envoltorio) {
     return false;
 }

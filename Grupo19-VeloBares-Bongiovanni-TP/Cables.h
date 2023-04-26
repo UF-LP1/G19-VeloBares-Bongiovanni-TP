@@ -10,6 +10,8 @@
 
 
 class Cables: public ArtElectricidad {
-};
 
+Cables();
+~Cables();
+};
 #endif //_CABLES_H

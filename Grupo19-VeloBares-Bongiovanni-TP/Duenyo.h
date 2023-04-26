@@ -2,7 +2,7 @@
  * Project Untitled
  */
 
-#include "Cliente.h"
+
 #include <string> 
 #include "Articulos.h"
 #include "ArtBazar.h"
@@ -38,7 +38,7 @@ float generarPresupuesto(list<Articulos> Lista, bool descuento, unsigned int pre
 /**
  * @param Cliente.lista
  */
-int cobrar(void Cliente.lista);
+
     
 void atendercliente();
     

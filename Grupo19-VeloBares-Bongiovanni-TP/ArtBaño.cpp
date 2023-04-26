@@ -14,6 +14,19 @@
  * @param string color
  * @return void
  */
-void ArtBaño::elegircolores(void string color) {
-    return;
+
+
+
+
+ArtBanio::ArtBanio()
+{
+
+}
+
+ArtBanio::~ArtBanio()
+{
+}
+
+void ArtBanio::elegircolores(string color)
+{
 }

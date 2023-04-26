@@ -11,12 +11,12 @@
 
 class ArtFerreteria: public Articulos {
 public: 
-    void Attribute1;
-    
+    ArtFerreteria();
+    ~ArtFerreteria();
 /**
  * @param envoltorio
  */
-bool chequearenvoltorio(void envoltorio);
+bool chequearenvoltorio(bool envoltorio);
 };
 
 #endif //_ARTFERRETERIA_H

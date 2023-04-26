@@ -56,13 +56,15 @@ float Duenyo::generarPresupuesto(list<Articulos> Lista, bool descuento, unsigned
     float total = 0;
     int tamtotal = Lista.size();
     int i=0;
-    
+    int _i;
+    list <Articulos> ::iterator it = Lista.begin();
 
-    for (i = 0; i < tamtotal; i++)
+    for (i = 0; i <_i; i++)
     {
-        acumprecio = acumprecio + Lista[i].precio;
+        acumprecio = acumprecio + it->getprecio();
        
-        acumdescuento = acumdescuento + Lista[i].descuento;
+        acumdescuento = acumdescuento + it->getdescuento();
+        ++i;
     }
 
     total = acumprecio - acumdescuento;
@@ -73,9 +75,7 @@ float Duenyo::generarPresupuesto(list<Articulos> Lista, bool descuento, unsigned
  * @param Cliente.lista
  * @return int
  */
-int Duenyo::cobrar(list<Articulos> Lista1 ) {
-    return 0;
-}
+
 
 /**
  * @return void
