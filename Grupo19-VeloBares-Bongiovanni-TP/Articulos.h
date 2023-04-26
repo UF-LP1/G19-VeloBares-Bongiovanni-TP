@@ -5,33 +5,32 @@
 #include <string> 
 #ifndef _ARTICULOS_H
 #define _ARTICULOS_H
-using namespace std
+using namespace std;
 class Articulos {
 public:
-    Articulos::Articulos(string caracteristicas; unsigned int precio; bool repuesto; const unsigned int tamanyo; unsigned int num-art; bool envoltorio; bool stock;
-    bool descuento)
-    
+    Articulos(string caracteristicas, unsigned int precio, bool repuesto, const unsigned int tamanyo, unsigned int numart, bool envoltorio; bool stock, bool descuento)
+    ~Articulos()
 /**
  * @param precio
- */
-void set(void precio);
+ */;
+void set(unsigned int precio);
     
 /**
  * @param num-art
  */
-unsigned int get(void num-art);
+unsigned int get(unsigned int numart);
     
 /**
  * @param stock
  */
-bool get(void stock);
+bool get(bool stock);
     
 void reponerstock();
     
 /**
  * @param descuento
  */
-void set(void descuento);
+void set(bool descuento);
 bool getdescuento();
 unsigned int getprecio();
 protected:   // ATRIBUTOS DEL ARTICULOSSS
@@ -39,7 +38,7 @@ protected:   // ATRIBUTOS DEL ARTICULOSSS
     unsigned int precio;
     bool repuesto;
     const unsigned int tamanyo;
-    unsigned int num-art;
+    unsigned int numart;
     bool envoltorio;
     bool stock;
     bool descuento;

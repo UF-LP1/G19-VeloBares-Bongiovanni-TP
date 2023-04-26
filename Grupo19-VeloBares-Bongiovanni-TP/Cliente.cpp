@@ -10,11 +10,21 @@
  */
 
 
+Cliente::Cliente(string nombrec, string domicilio, unsigned int telefono, const string dni, bool permiso, Articulos.lista)
+{
+}
+
+Cliente::~Cliente()
+{
+}
+
+
+
 /**
  * @param telefono
  * @return void
  */
-void Cliente::set(void telefono) {
+void Cliente::set(unsigned int telefono) {
     return;
 }
 
@@ -22,7 +32,7 @@ void Cliente::set(void telefono) {
  * @param permiso
  * @return bool
  */
-bool Cliente::get(void permiso) {
+bool Cliente::get(bool permiso) {
     return false;
 }
 
@@ -30,8 +40,13 @@ bool Cliente::get(void permiso) {
  * @param unsigned int num-art
  * @return void
  */
-void Cliente::comprarart(void unsigned int num-art) {
+void Cliente::comprarart( unsigned int num-art) {
     return;
+}
+
+bool Cliente::get(bool permiso)
+{
+    return false;
 }
 
 /**

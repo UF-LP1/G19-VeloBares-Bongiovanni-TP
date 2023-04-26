@@ -14,7 +14,7 @@
  * @param precio
  * @return void
  */
-void Articulos::set(void precio) {
+void Articulos::set(unsigned int precio) {
     return;
 }
 
@@ -22,7 +22,7 @@ void Articulos::set(void precio) {
  * @param num-art
  * @return unsigned int
  */
-unsigned int Articulos::get(void num-art) {
+unsigned int Articulos::get(unsigned int numart) {
     return null;
 }
 
@@ -30,7 +30,12 @@ unsigned int Articulos::get(void num-art) {
  * @param stock
  * @return bool
  */
-bool Articulos::get(void stock) {
+bool Articulos::get(bool stock) {
+    return false;
+}
+
+bool Articulos::get(bool stock)
+{
     return false;
 }
 
@@ -45,6 +50,16 @@ void Articulos::reponerstock() {
  * @param descuento
  * @return void
  */
-void Articulos::set(void descuento) {
+void Articulos::set(bool descuento) {
     return;
+}
+
+bool Articulos::getdescuento()
+{
+    return false;
+}
+
+unsigned int Articulos::getprecio()
+{
+    return 0;
 }

@@ -15,7 +15,12 @@ using namespace std
     
 }
 
-~Duenyo()
+ 
+   Duenyo::~Duenyo()
+    {
+    }
+
+    
 /**
  * @param horariotrabajo
  * @return void
@@ -28,7 +33,7 @@ void Duenyo::set(string horariotrabajo) {
  * @param DNI
  * @return string
  */
-string Duenyo::get(void DNI) {
+string Duenyo::get(string DNI) {
     return "";
 }
 
@@ -44,12 +49,12 @@ void Duenyo::abrirlocal() {
     return;
 }
 
-float Duenyo::generarPresupuesto(list<Articulos> Lista ; bool descuento; unsigned int precio)
+float Duenyo::generarPresupuesto(list<Articulos> Lista, bool descuento, unsigned int precio)
 {
     float acumprecio = 0;
     float acumdescuento = 0;
     float total = 0;
-    int tamtotal= Lista.size()
+    int tamtotal = Lista.size();
     int i=0;
     
 
@@ -68,7 +73,7 @@ float Duenyo::generarPresupuesto(list<Articulos> Lista ; bool descuento; unsigne
  * @param Cliente.lista
  * @return int
  */
-int Duenyo::cobrar(void Cliente.lista) {
+int Duenyo::cobrar(list<Articulos> Lista1 ) {
     return 0;
 }
 

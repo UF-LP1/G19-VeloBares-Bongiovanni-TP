@@ -2,19 +2,23 @@
  * Project Untitled
  */
 
-
+#include <string>
 #include "Empleados.h"
 
 /**
  * Empleados implementation
  */
 
+Empleados(string nombree, string horarioatencion, unsigned int preciotrabajo, bool disponible, const unsigned int dnis, string apellidos, string duracion)
+{}
+
+~Empleados()
 
 /**
  * @param preciotrabajo
  * @return void
  */
-void Empleados::set(void preciotrabajo) {
+void Empleados::set(unsigned int preciotrabajo) {
     return;
 }
 
@@ -22,7 +26,7 @@ void Empleados::set(void preciotrabajo) {
  * @param disponible
  * @return bool
  */
-bool Empleados::get(void disponible) {
+bool Empleados::get(bool disponible) {
     return false;
 }
 
@@ -30,7 +34,7 @@ bool Empleados::get(void disponible) {
  * @param horariodeatencion
  * @return void
  */
-void Empleados::set(void horariodeatencion) {
+void Empleados::set(string horariodeatencion) {
     return;
 }
 

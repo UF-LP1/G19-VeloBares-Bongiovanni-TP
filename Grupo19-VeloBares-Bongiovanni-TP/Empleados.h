@@ -2,27 +2,29 @@
  * Project Untitled
  */
 
-
+#include <string> 
 #ifndef _EMPLEADOS_H
 #define _EMPLEADOS_H
-
+using namespace std;
 class Empleados {
 public: 
+    Empleados(string nombree,string horarioatencion,unsigned int preciotrabajo,bool disponible,const unsigned int dnis,string apellidos,string duracion);
+    ~Empleados()
     
 /**
  * @param preciotrabajo
- */
-void set(void preciotrabajo);
+ */;
+void set(unsigned int preciotrabajo);
     
 /**
  * @param disponible
  */
-bool get(void disponible);
+bool get(bool disponible);
     
 /**
  * @param horariodeatencion
  */
-void set(void horariodeatencion);
+void set(string horariodeatencion);
     
 string getnombree();
     

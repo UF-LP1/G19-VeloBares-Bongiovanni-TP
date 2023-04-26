@@ -14,8 +14,12 @@
  * @param ubicacion
  * @return void
  */
-void Ferreteria::set(void ubicacion) {
+void Ferreteria::set(string ubicacion) {
     return;
+}
+
+void Ferreteria::set(string ubicacion)
+{
 }
 
 /**
@@ -57,6 +61,6 @@ string Ferreteria::getnombref() {
  * @param horario
  * @return void
  */
-void Ferreteria::set(void horario) {
+void Ferreteria::set(string horario) {
     return;
 }

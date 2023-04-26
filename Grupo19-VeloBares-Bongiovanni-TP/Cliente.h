@@ -1,32 +1,32 @@
 /**
  * Project Untitled
  */
-
+#include "Duenyo.h"
 #include "Articulos.h"
 #include <list>
 #ifndef _CLIENTE_H
 #define _CLIENTE_H
 
 #include <string> 
-using namespace std
+using namespace std;
 class Cliente {
 public: 
-    Cliente::Cliente(string nombrec; string domicilio; unsigned int telefono; const string dni; bool permiso; Articulos.lista)
-    
+    Cliente(string nombrec, string domicilio, unsigned int telefono, const string dni, bool permiso, Articulos.lista);
+    ~Cliente();
 /**
  * @param telefono
  */
-void set(void telefono);
+void set(unsigned int telefono);
     
 /**
  * @param permiso
  */
-bool get(void permiso);
+bool get(bool permiso);
     
 /**
  * @param unsigned int num-art
  */
-void comprarart(void unsigned int num-art);
+void comprarart( unsigned int num-art);
     
 void pedirempleados();
     
