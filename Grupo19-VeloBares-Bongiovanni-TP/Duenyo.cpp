@@ -10,7 +10,7 @@ using namespace std
  * Duenyo implementation
  */;;
 
-    Duenyo::Duenyo(string nombred, const string DNI, string horariotrabajo, string apellidod)
+    Duenyo::Duenyo(string nombred,  string DNI, string horariotrabajo, string apellidod)
 {
     
 }
@@ -34,13 +34,9 @@ void Duenyo::set(string horariotrabajo) {
  * @return string
  */
 string Duenyo::get(string DNI) {
-    return "";
+    return this->DNI;
 }
 
-string Duenyo::get(string DNI)
-{
-    return string();
-}
 
 /**
  * @return void
@@ -54,7 +50,7 @@ float Duenyo::generarPresupuesto(list<Articulos> Lista, bool descuento, unsigned
     float acumprecio = 0;
     float acumdescuento = 0;
     float total = 0;
-    int tamtotal = Lista.size();
+    int tamtotal = Lista.size(); // esta lista, es la que nos devuelve la funcion "agregarlista" con todos los art  y precios que el cliente desea
     int i=0;
     int _i;
     list <Articulos> ::iterator it = Lista.begin();
@@ -89,6 +85,6 @@ void Duenyo::atendercliente() {
  * @return string
  */
 string Duenyo::getnombred() {
-    return "";
+    return this->nombred;
 }
 

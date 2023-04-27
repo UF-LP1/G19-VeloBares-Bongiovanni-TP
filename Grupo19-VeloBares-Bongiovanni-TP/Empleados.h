@@ -11,7 +11,7 @@ using namespace std;
 
 class Empleados {
 public: 
-    Empleados(string nombree, string horarioatencion, unsigned int preciotrabajo,bool disponible,const unsigned int dnis,string apellidos,string duracion);
+    Empleados(string nombree, string horarioatencion, unsigned int preciotrabajo,bool disponible, unsigned int dnis,string apellidos,string duracion);
     ~Empleados();
     
 /**
@@ -37,7 +37,7 @@ protected:
     string horarioatencion;
     unsigned int preciotrabajo;
     bool disponible;
-    const unsigned int dnis;
+     unsigned int dnis;
     string apellidos;
     string duracion;
 };

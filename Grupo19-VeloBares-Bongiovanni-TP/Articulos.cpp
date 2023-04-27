@@ -1,7 +1,7 @@
 /**
  * Project Untitled
  */
-
+#include <list>
 
 #include "Articulos.h"
 
@@ -9,6 +9,14 @@
  * Articulos implementation
  */
 
+
+Articulos::Articulos(string caracteristicas, unsigned int precio, bool repuesto, unsigned int tamanyo, unsigned int numart, bool envoltorio, bool stock, bool descuento, list<Articulos> catalogo)
+{
+}
+
+Articulos::~Articulos()
+{
+}
 
 /**
  * @param precio

@@ -2,7 +2,7 @@
  * Project Untitled
  */
 
-
+#include <list>
 #ifndef _FERRETERIA_H
 #define _FERRETERIA_H
 #include "Empleados.h"
@@ -38,6 +38,7 @@ private:
     string ubicacion;
     string horario;
     bool abierto;
+    
 };
 
 #endif //_FERRETERIA_H

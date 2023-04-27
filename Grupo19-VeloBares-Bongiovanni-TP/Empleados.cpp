@@ -10,7 +10,7 @@
  */
 
 
-Empleados::Empleados(string nombree, string horarioatencion, unsigned int preciotrabajo, bool disponible, const unsigned int dnis, string apellidos, string duracion)
+Empleados::Empleados(string nombree, string horarioatencion, unsigned int preciotrabajo, bool disponible,  unsigned int dnis, string apellidos, string duracion)
 {
 }
 
@@ -46,7 +46,7 @@ void Empleados::set(string horariodeatencion) {
  * @return string
  */
 string Empleados::getnombree() {
-    return "";
+    return this->nombree;
 }
 
 /**

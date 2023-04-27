@@ -6,7 +6,7 @@
 #include <list>
 #ifndef _CLIENTE_H
 #define _CLIENTE_H
-
+#include <iostream>
 #include <string> 
 using namespace std;
 class Cliente {
@@ -49,12 +49,12 @@ string getubicacion();
 void verprecio(Articulos precioArt);
 
 
-void agregaralista();
+Articulos agregaralista();
 private: 
     string nombrec;
     string domicilio;
     unsigned int telefono;
-    const string dni;
+     string dni;
     bool permiso;
     list<Articulos> Lista;
 };

@@ -54,7 +54,7 @@ void Ferreteria::llamardespachante() {
  * @return string
  */
 string Ferreteria::getnombref() {
-    return "";
+    return this->nombref;
 }
 
 /**

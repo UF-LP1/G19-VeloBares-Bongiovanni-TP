@@ -18,14 +18,14 @@
 
 class Duenyo {
 public: 
-   Duenyo(string nombred, const string DNI, string horariotrabajo, string apellidod);
+   Duenyo(string nombred,  string DNI, string horariotrabajo, string apellidod);
    ~Duenyo();
 /**
  * @param horariotrabajo
  */
 void set( string horariotrabajo);
     
-void set(string horariotrabajo);
+
 
 /**
  * @param DNI
@@ -33,6 +33,7 @@ void set(string horariotrabajo);
 string get(string DNI);
     
 void abrirlocal();
+
 float generarPresupuesto(list<Articulos> Lista, bool descuento, unsigned int precio);
     
 /**
@@ -43,9 +44,10 @@ float generarPresupuesto(list<Articulos> Lista, bool descuento, unsigned int pre
 void atendercliente();
     
 string getnombred();
+
 private: 
     string nombred;
-    const string DNI;
+     string DNI;
     string horariotrabajo;
     string apellidod;
 };

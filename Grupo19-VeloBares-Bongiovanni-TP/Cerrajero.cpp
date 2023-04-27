@@ -2,7 +2,7 @@
  * Project Untitled
  */
 
-
+#include <iostream>
 #include "Cerrajero.h"
 
 /**
@@ -30,7 +30,8 @@ void Cerrajero::copiarllaves(enum tipo llave)
 {
 }
 enum llaves Cerrajero::gettipo() {
-    return;
+
+    return ;
 }
 
 /**
