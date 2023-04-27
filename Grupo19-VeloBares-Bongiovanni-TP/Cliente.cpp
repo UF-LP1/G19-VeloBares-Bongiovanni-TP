@@ -10,7 +10,7 @@
  */
 
 
-Cliente::Cliente(string nombrec, string domicilio, unsigned int telefono, const string dni, bool permiso, list<Articulos> Lista)
+Cliente::Cliente(string nombrec, string domicilio, unsigned int telefono,  string dni, bool permiso, list<Articulos> Lista)
 {
 }
 
@@ -40,7 +40,7 @@ bool Cliente::get(bool permiso) {
  * @param unsigned int num-art
  * @return void
  */
-void Cliente::comprarart( unsigned int num-art) {
+void Cliente::comprarart( unsigned int numart) {
     return;
 }
 
@@ -66,7 +66,7 @@ void Cliente::pedirempleados() {
  */
 void Cliente::pagar( Duenyo josecito) {
 
-    josecito.generarPresupuesto(list<Articulos> Lista, bool descuento, unsigned int precio);
+    float a = josecito.generarPresupuesto(list<Articulos> Lista, bool descuento, unsigned int precio);
     return;
 }
 
@@ -74,21 +74,30 @@ void Cliente::pagar( Duenyo josecito) {
  * @return string
  */
 string Cliente::getnombrec() {
-    return "";
+    return this->nombrec;
 }
 
 /**
  * @return string
  */
 string Cliente::getubicacion() {
-    return "";
+    return this->domicilio;
 }
 
 /**
  * @param Articulos.precio
  * @return void
  */
+
 void Cliente::verprecio(Articulos precioArt) {
+
+    Articulos get(list<Articulos> Lista, int _i) {
+        list<Articulos>::iterator it = _lista.begin();
+        for (int i = 0; i<_i; i++) {
+            it++;
+            cout<< it->getprecio();<<
+    }
+
     return; 
 }
 

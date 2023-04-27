@@ -11,13 +11,15 @@
 
 class Cerrajero: public Empleados {
 public: 
+    Cerrajero();
+    ~Cerrajero();
     
 /**
  * @param enum tipo llave
  */
-void copiarllaves(void enum tipo llave);
+void copiarllaves( enum tipo llave);
     
-emun llave gettipo();
+enum llaves gettipo();
     
 void arreglecerraduras();
 };

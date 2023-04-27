@@ -8,3 +8,9 @@
 /**
  * Cerruchos implementation
  */
+Cerruchos::Cerruchos()
+{
+}
+Cerruchos::~Cerruchos()
+{
+}

@@ -10,6 +10,8 @@
 
 
 class Tablas: public ArtBazar {
+	Tablas();
+	~Tablas();
 };
 
 #endif //_TABLAS_H

@@ -8,3 +8,11 @@
 /**
  * Cepillos implementation
  */
+
+Cepillos::Cepillos()
+{
+}
+
+Cepillos::~Cepillos()
+{
+}

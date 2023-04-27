@@ -10,6 +10,9 @@
 
 
 class Cerruchos: public ArtHerramienta {
+
+	Cerruchos();
+	~Cerruchos();
 };
 
 #endif //_CERRUCHOS_H

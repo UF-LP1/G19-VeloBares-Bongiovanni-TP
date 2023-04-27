@@ -8,3 +8,9 @@
 /**
  * Tablas implementation
  */
+Tablas::Tablas()
+{
+}
+Tablas::~Tablas()
+{
+}

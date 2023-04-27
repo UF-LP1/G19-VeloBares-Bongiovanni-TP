@@ -8,3 +8,9 @@
 /**
  * Cortinas implementation
  */
+Cortinas::Cortinas()
+{
+}
+Cortinas::~Cortinas()
+{
+}

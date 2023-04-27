@@ -10,6 +10,9 @@
 
 
 class Martillos: public ArtHerramienta {
+
+	Martillos();
+	~Martillos();
 };
 
 #endif //_MARTILLOS_H

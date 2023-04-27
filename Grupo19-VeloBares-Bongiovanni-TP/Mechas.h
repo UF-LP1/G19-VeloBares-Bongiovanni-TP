@@ -10,6 +10,9 @@
 
 
 class Mechas: public ArtFerreteria {
+
+	Mechas();
+	~Mechas();
 };
 
 #endif //_MECHAS_H

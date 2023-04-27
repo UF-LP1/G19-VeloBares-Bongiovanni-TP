@@ -4,7 +4,7 @@
 
 
 #include <string> 
-#include "Articulos.h"
+#include "Articulos.h" // si no haciamos esto, explotaba todo:,)
 #include "ArtBazar.h"
 #include "ArtBaño.h"
 #include "ArtCerrajeria.h"

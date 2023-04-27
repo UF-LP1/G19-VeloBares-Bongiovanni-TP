@@ -9,8 +9,10 @@
 #include "ArtBaño.h"
 
 
-class Cepillos: public ArtBaño {
+class Cepillos: public ArtBanio {
 private: 
+    Cepillos();
+    ~Cepillos();
     enum cerdas tipodecerdas;
 };
 

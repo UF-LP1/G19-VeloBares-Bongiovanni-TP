@@ -59,7 +59,8 @@ float Duenyo::generarPresupuesto(list<Articulos> Lista, bool descuento, unsigned
     int _i;
     list <Articulos> ::iterator it = Lista.begin();
 
-    for (i = 0; i <_i; i++)
+    for (i = 0; i <_i; i++) //asumimos que no es necesario chequear el stock ya que el presupuesto no depende de ello sino que del precio final de la cant de articulos que el cliente desee
+    
     {
         acumprecio = acumprecio + it->getprecio();
        

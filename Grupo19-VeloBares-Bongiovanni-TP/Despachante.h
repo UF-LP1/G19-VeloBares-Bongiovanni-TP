@@ -11,13 +11,15 @@
 
 class Despachante: public Empleados {
 public: 
+    Despachante();
+    ~Despachante();
     
 void entregarproducto();
     
 /**
  * @param transporte
  */
-void set(void transporte);
+void set(string transporte);
 private: 
     string transporte;
 };

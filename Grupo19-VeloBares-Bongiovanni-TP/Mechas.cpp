@@ -8,3 +8,9 @@
 /**
  * Mechas implementation
  */
+Mechas::Mechas()
+{
+}
+Mechas::~Mechas()
+{
+}

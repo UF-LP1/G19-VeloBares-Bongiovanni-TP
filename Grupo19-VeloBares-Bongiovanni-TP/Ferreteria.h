@@ -16,8 +16,10 @@ public:
  * @param ubicacion
  */
 void set(string ubicacion);
+
+bool getabierto();
     
-bool get();
+
     
 void llamarcerrajero();
     

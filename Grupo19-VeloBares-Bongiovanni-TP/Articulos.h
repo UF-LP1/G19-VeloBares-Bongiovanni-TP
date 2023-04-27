@@ -8,7 +8,7 @@
 using namespace std;
 class Articulos {
 public:
-    Articulos(string caracteristicas, unsigned int precio, bool repuesto, const unsigned int tamanyo, unsigned int numart, bool envoltorio; bool stock, bool descuento)
+    Articulos(string caracteristicas, unsigned int precio, bool repuesto,  unsigned int tamanyo, unsigned int numart, bool envoltorio, bool stock, bool descuento);
     ~Articulos()
 /**
  * @param precio

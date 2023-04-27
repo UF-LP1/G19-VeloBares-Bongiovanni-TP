@@ -11,6 +11,9 @@
 
 class Clavos: public ArtFerreteria {
 private: 
+
+    Clavos();
+    ~Clavos();
     enum tam largo;
 };
 

@@ -10,6 +10,9 @@
 
 
 class Tenders: public ArtBazar {
+
+	Tenders();
+	~Tenders();
 };
 
 #endif //_TENDERS_H

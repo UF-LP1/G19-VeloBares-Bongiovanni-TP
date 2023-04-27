@@ -13,6 +13,12 @@
 /**
  * @return void
  */
+Despachante::Despachante()
+{
+}
+Despachante::~Despachante()
+{
+}
 void Despachante::entregarproducto() {
     return;
 }
@@ -21,6 +27,6 @@ void Despachante::entregarproducto() {
  * @param transporte
  * @return void
  */
-void Despachante::set(void transporte) {
+void Despachante::set(string transporte) {
     return;
 }

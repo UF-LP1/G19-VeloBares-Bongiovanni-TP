@@ -8,3 +8,9 @@
 /**
  * Tenders implementation
  */
+Tenders::Tenders()
+{
+}
+Tenders::~Tenders()
+{
+}

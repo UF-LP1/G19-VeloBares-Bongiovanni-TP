@@ -8,3 +8,9 @@
 /**
  * Cerradura implementation
  */
+Cerradura::Cerradura()
+{
+}
+Cerradura::~Cerradura()
+{
+}

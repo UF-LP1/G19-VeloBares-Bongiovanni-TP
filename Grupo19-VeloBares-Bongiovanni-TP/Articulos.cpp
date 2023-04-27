@@ -23,16 +23,14 @@ void Articulos::set(unsigned int precio) {
  * @return unsigned int
  */
 unsigned int Articulos::get(unsigned int numart) {
-    return 0;
+    return this-> numart;
 }
 
 /**
  * @param stock
  * @return bool
  */
-bool Articulos::get(bool stock) {
-    return false;
-}
+
 
 bool Articulos::get(bool stock)
 {
@@ -61,5 +59,5 @@ bool Articulos::getdescuento()
 
 unsigned int Articulos::getprecio()
 {
-    return 0;
+    return this-> precio;
 }

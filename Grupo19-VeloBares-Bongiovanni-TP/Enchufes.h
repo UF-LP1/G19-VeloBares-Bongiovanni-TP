@@ -11,6 +11,9 @@
 
 class Enchufes: public ArtElectricidad {
 private: 
+
+    Enchufes();
+    ~Enchufes();
     enum patas tipodepatas;
 };
 

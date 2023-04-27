@@ -11,6 +11,8 @@
 
 class Plomero: public Empleados {
 public: 
+    Plomero();
+    ~Plomero();
     
 void destaparcloaca();
 };

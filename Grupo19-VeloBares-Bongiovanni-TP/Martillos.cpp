@@ -8,3 +8,9 @@
 /**
  * Martillos implementation
  */
+Martillos::Martillos()
+{
+}
+Martillos::~Martillos()
+{
+}

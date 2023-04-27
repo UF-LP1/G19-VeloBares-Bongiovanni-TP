@@ -9,7 +9,9 @@
 #include "ArtBaño.h"
 
 
-class Cortinas: public ArtBaño {
+class Cortinas: public ArtBanio {
+	Cortinas();
+	~Cortinas();
 };
 
 #endif //_CORTINAS_H

@@ -13,6 +13,12 @@
 /**
  * @return void
  */
+Plomero::Plomero()
+{
+}
+Plomero::~Plomero()
+{
+}
 void Plomero::destaparcloaca() {
     return;
 }

@@ -10,6 +10,9 @@
 
 
 class Cerradura: public ArtCerrajeria {
+	Cerradura();
+	~Cerradura();
+
 };
 
 #endif //_CERRADURA_H

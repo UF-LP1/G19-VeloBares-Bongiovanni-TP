@@ -8,3 +8,9 @@
 /**
  * Enchufes implementation
  */
+Enchufes::~Enchufes()
+{
+}
+Enchufes::~Enchufes()
+{
+}

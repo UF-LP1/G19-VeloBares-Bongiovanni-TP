@@ -8,3 +8,9 @@
 /**
  * Clavos implementation
  */
+Clavos::~Clavos()
+{
+}
+Clavos::~Clavos()
+{
+}

@@ -25,7 +25,7 @@ void Ferreteria::set(string ubicacion)
 /**
  * @return bool
  */
-bool Ferreteria::get() {
+bool Ferreteria::getabierto() {
     return false;
 }
 
