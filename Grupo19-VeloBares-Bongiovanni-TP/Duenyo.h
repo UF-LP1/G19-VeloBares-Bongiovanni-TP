@@ -47,7 +47,7 @@ string getnombred();
 
 private: 
     string nombred;
-     string DNI;
+    string DNI;
     string horariotrabajo;
     string apellidod;
 };

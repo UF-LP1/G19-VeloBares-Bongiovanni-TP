@@ -10,21 +10,26 @@
  */
 
 
-Cliente::Cliente(string nombrec, string domicilio, unsigned int telefono,  string dni, bool permiso, list<Articulos> Lista)
+Cliente::Cliente(string nombrec_, string domicilio_, unsigned int telefono_,  string dni_, bool permiso_, list<Articulos> Lista_)
 {
+    this->nombrec = nombrec_;
+    this->domicilio = domicilio_;
+    this->telefono = telefono_;
+    this->dni = dni_;
+    this->permiso = permiso_;
+    this->Lista = Lista_;
+    
 }
 
 Cliente::~Cliente()
 {
 }
 
-
-
 /**
  * @param telefono
  * @return void
  */
-void Cliente::set(unsigned int telefono) {
+void Cliente::settelefono(unsigned int telefono) { //cambie el nombre
     return;
 }
 
@@ -32,7 +37,7 @@ void Cliente::set(unsigned int telefono) {
  * @param permiso
  * @return bool
  */
-bool Cliente::get(bool permiso) {
+bool Cliente::getpermiso(bool permiso) { //cambie el nombre
     return false;
 }
 
@@ -44,10 +49,6 @@ void Cliente::comprarart( unsigned int numart) {
     return;
 }
 
-bool Cliente::get(bool permiso)
-{
-    return false;
-}
 
 void Cliente::comprarart(unsigned int numart)
 {
@@ -64,9 +65,9 @@ void Cliente::pedirempleados() {
  * @param Duenyo.cobrar
  * @return void
  */
-void Cliente::pagar( Duenyo josecito) {
+void Cliente::pagar(Duenyo josecito) { 
 
-    float a = josecito.generarPresupuesto(list<Articulos> Lista, bool descuento, unsigned int precio);
+    /* hacer Duenyo.cobrar() en el main, lo guardan en una variable (ej:cobrofinal) y la pasan a pagar de Cliente. */
     return;
 }
 
@@ -96,7 +97,7 @@ void Cliente::verprecio(Articulos precioArt) { //tiene que poder ver el precio
         for (int i = 0; i < _i; i++) 
         {
             it++;
-            cout << it->getprecio() << endl;
+            cout << it->getpreciodeart() << endl;
         }
     
 
@@ -108,16 +109,17 @@ void Cliente::verprecio(Articulos precioArt) { //tiene que poder ver el precio
  */
 Articulos Cliente::agregaralista() {
 
+    //por que no toma?
     //tiene que agregar elementos
     int numeroart; // el cliente ingresa ese numero de articulo
     int _i;
-    list<Articulos>::iterator it = catalogo.begin(); // nuestra idea sabiendo lo que hay que hacer pero no como ejecutarlo 
+    list<Articulos>::iterator it = catalogo_.begin();  
     for (int i = 0; i < _i; i++)
     {                          
         it++;
         cout << "Ingrese numero del articulo que desee agregar la lista" << endl;
         cin >> numeroart;
-        if (numeroart == catalogo[i].numart)
+        if (numeroart == catalogo_[i].numart)
             Lista.push_front(Articulos); //
 
     }

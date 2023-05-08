@@ -13,26 +13,29 @@ public:
 /**
  * @param precio
  */;
-void set(unsigned int precio);
+void setpreciodeart(unsigned int precio);
     
 /**
  * @param num-art
  */
-unsigned int get(unsigned int numart);
+unsigned int getnumerodeart(unsigned int numart);
     
 /**
  * @param stock
  */
-bool get(bool stock);
+bool getstockproducto(bool stock);
     
 void reponerstock();
     
 /**
  * @param descuento
  */
-void set(bool descuento);
-bool getdescuento();
-unsigned int getprecio();
+void setdescuentos(bool descuento);
+
+bool getdescuentos(bool descuento);
+
+unsigned int getpreciodeart();
+
 protected:   // ATRIBUTOS DEL ARTICULOSSS
     string caracteristicas;
     unsigned int precio;

@@ -10,9 +10,13 @@ using namespace std
  * Duenyo implementation
  */;;
 
-    Duenyo::Duenyo(string nombred,  string DNI, string horariotrabajo, string apellidod)
+    Duenyo::Duenyo(string nombred_,  string DNI_, string horariotrabajo_, string apellidod_)
 {
-    
+        this->nombred = nombred_;
+        this->DNI = DNI_;
+        this->horariotrabajo = horariotrabajo_;
+        this->apellidod = apellidod_;
+
 }
 
  
@@ -52,15 +56,18 @@ float Duenyo::generarPresupuesto(list<Articulos> Lista, bool descuento, unsigned
     float total = 0;
     int tamtotal = Lista.size(); // esta lista, es la que nos devuelve la funcion "agregarlista" con todos los art  y precios que el cliente desea
     int i=0;
-    int _i;
+    int _i=0;//inicialice
     list <Articulos> ::iterator it = Lista.begin();
 
-    for (i = 0; i <_i; i++) //asumimos que no es necesario chequear el stock ya que el presupuesto no depende de ello sino que del precio final de la cant de articulos que el cliente desee
+    for (list<Articulos>::iterator it = Lista.begin(); it != Lista.end(); ++it)
+
+    //for (i = 0; i <_i; i++) 
+    //asumimos que no es necesario chequear el stock ya que el presupuesto no depende de ello sino que del precio final de la cant de articulos que el cliente desee
     
     {
-        acumprecio = acumprecio + it->getprecio();
+        acumprecio = acumprecio + it->getpreciodeart();
        
-        acumdescuento = acumdescuento + it->getdescuento();
+        acumdescuento = acumdescuento + it->getdescuentos();
         ++i;
     }
 

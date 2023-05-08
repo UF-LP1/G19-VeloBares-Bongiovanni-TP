@@ -16,12 +16,12 @@ public:
 /**
  * @param telefono
  */
-void set(unsigned int telefono);
+void settelefono(unsigned int telefono);
     
 /**
  * @param permiso
  */
-bool get(bool permiso);
+bool getpermiso(bool permiso);
     
 /**
  * @param unsigned int num-art

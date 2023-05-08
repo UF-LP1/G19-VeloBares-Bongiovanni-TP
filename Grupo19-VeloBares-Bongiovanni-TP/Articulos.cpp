@@ -10,19 +10,29 @@
  */
 
 
-Articulos::Articulos(string caracteristicas, unsigned int precio, bool repuesto, unsigned int tamanyo, unsigned int numart, bool envoltorio, bool stock, bool descuento, list<Articulos> catalogo)
+Articulos::Articulos(string caracteristicas_, unsigned int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_, list<Articulos> catalogo_)
 {
+    this->caracteristicas = caracteristicas_;
+    this->precio = precio_;
+    this->repuesto = repuesto_;
+    this->tamanyo = tamanyo_;
+    this->numart = numart_;
+    this->envoltorio = envoltorio_;
+    this->stock = stock_;
+    this->descuento = descuento_;
+    this->catalogo = catalogo_;
 }
 
 Articulos::~Articulos()
 {
 }
 
+
 /**
  * @param precio
  * @return void
  */
-void Articulos::set(unsigned int precio) {
+void Articulos::setpreciodeart(unsigned int precio) { //cambie el nombre de los get y set 
     return;
 }
 
@@ -30,7 +40,7 @@ void Articulos::set(unsigned int precio) {
  * @param num-art
  * @return unsigned int
  */
-unsigned int Articulos::get(unsigned int numart) {
+unsigned int Articulos::getnumerodeart(unsigned int numart) {
     return this-> numart;
 }
 
@@ -40,7 +50,7 @@ unsigned int Articulos::get(unsigned int numart) {
  */
 
 
-bool Articulos::get(bool stock)
+bool Articulos::getstockproducto(bool stock)
 {
     return false;
 }
@@ -56,16 +66,16 @@ void Articulos::reponerstock() {
  * @param descuento
  * @return void
  */
-void Articulos::set(bool descuento) {
+void Articulos::setdescuentos(bool descuento) {
     return;
 }
 
-bool Articulos::getdescuento()
+bool Articulos::getdescuentos(bool descuento) //ahora recibe
 {
     return false;
 }
 
-unsigned int Articulos::getprecio()
+unsigned int Articulos::getpreciodeart()
 {
     return this-> precio;
 }
