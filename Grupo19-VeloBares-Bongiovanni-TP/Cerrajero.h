@@ -17,11 +17,10 @@ public:
 /**
  * @param enum tipo llave
  */
-void copiarllaves( enum tipo llave);
-    
-enum llaves gettipo();
+void copiarllaves(enum tipo llave);
     
 void arreglecerraduras();
+
 };
 
 #endif //_CERRAJERO_H

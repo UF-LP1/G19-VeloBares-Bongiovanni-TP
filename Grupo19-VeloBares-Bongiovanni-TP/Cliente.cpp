@@ -49,11 +49,6 @@ void Cliente::comprarart( unsigned int numart) {
     return;
 }
 
-
-void Cliente::comprarart(unsigned int numart)
-{
-}
-
 /**
  * @return void
  */
@@ -91,7 +86,7 @@ string Cliente::getubicacion() {
  */
 
 void Cliente::verprecio(Articulos precioArt) { //tiene que poder ver el precio
-    int _i;
+    int _i=0;
 
         list<Articulos>::iterator it = Lista.begin();
         for (int i = 0; i < _i; i++) 
@@ -107,11 +102,19 @@ void Cliente::verprecio(Articulos precioArt) { //tiene que poder ver el precio
 /**
  * @return void
  */
-Articulos Cliente::agregaralista() {
 
-    //por que no toma?
-    //tiene que agregar elementos
-    int numeroart; // el cliente ingresa ese numero de articulo
+Articulos Cliente::agregarcarrito(list <Articulos> Lista, Articulos a1, Articulos a2, Articulos a3, Articulos a4 ) {
+    Lista.push_back(a1);
+    Lista.push_back(a2);
+    Lista.push_back(a3);
+    Lista.push_back(a4);
+
+    return Lista;// que devuelve?
+}
+
+
+/*Articulos Cliente::agregaralista() {
+    int numeroart; 
     int _i;
     list<Articulos>::iterator it = catalogo_.begin();  
     for (int i = 0; i < _i; i++)
@@ -121,10 +124,8 @@ Articulos Cliente::agregaralista() {
         cin >> numeroart;
         if (numeroart == catalogo_[i].numart)
             Lista.push_front(Articulos); //
-
     }
-
     return this -> Lista;
-}
+}*/
 
 

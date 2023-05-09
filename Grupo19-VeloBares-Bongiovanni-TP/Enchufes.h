@@ -7,14 +7,14 @@
 #define _ENCHUFES_H
 
 #include "ArtElectricidad.h"
-
+#include "patas.h"
 
 class Enchufes: public ArtElectricidad {
 private: 
 
-    Enchufes();
+    Enchufes( patas tipodepatas_);
     ~Enchufes();
-    enum patas tipodepatas;
+    patas tipodepatas;
 };
 
 #endif //_ENCHUFES_H

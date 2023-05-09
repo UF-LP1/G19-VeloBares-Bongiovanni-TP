@@ -8,8 +8,9 @@
 /**
  * Clavos implementation
  */
-Clavos::~Clavos()
+Clavos::Clavos( tam largo_)
 {
+	this->largo = largo_;
 }
 Clavos::~Clavos()
 {

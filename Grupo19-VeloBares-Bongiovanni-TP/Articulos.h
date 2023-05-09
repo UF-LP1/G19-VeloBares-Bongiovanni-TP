@@ -8,7 +8,7 @@
 using namespace std;
 class Articulos {
 public:
-    Articulos(string caracteristicas, unsigned int precio, bool repuesto, unsigned int tamanyo, unsigned int numart, bool envoltorio, bool stock, bool descuento,  list <Articulos> catalogo);
+    Articulos( unsigned int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_);
     ~Articulos()
 /**
  * @param precio
@@ -37,7 +37,6 @@ bool getdescuentos(bool descuento);
 unsigned int getpreciodeart();
 
 protected:   // ATRIBUTOS DEL ARTICULOSSS
-    string caracteristicas;
     unsigned int precio;
     bool repuesto;
     unsigned int tamanyo;
@@ -45,8 +44,7 @@ protected:   // ATRIBUTOS DEL ARTICULOSSS
     bool envoltorio;
     bool stock;
     bool descuento;
-    list <Articulos> catalogo;
-
+ 
 };
 
 #endif //_ARTICULOS_H

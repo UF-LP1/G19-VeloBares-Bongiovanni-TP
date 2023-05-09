@@ -7,14 +7,14 @@
 #define _CLAVOS_H
 
 #include "ArtFerreteria.h"
-
+#include "tam.h"
 
 class Clavos: public ArtFerreteria {
 private: 
 
-    Clavos();
+    Clavos( tam largo_);
     ~Clavos();
-    enum tam largo;
+    tam largo; 
 };
 
 #endif //_CLAVOS_H

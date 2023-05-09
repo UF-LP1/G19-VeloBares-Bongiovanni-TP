@@ -49,12 +49,11 @@ void Duenyo::abrirlocal() {
     return;
 }
 
-float Duenyo::generarPresupuesto(list<Articulos> Lista, bool descuento, unsigned int precio)
+float Duenyo::generarPresupuesto(list<Articulos> Lista)//, bool descuento, unsigned int precio
 {
     float acumprecio = 0;
     float acumdescuento = 0;
-    float total = 0;
-    int tamtotal = Lista.size(); // esta lista, es la que nos devuelve la funcion "agregarlista" con todos los art  y precios que el cliente desea
+    float total = 0; 
     int i=0;
     int _i=0;//inicialice
     list <Articulos> ::iterator it = Lista.begin();
@@ -67,11 +66,12 @@ float Duenyo::generarPresupuesto(list<Articulos> Lista, bool descuento, unsigned
     {
         acumprecio = acumprecio + it->getpreciodeart();
        
-        acumdescuento = acumdescuento + it->getdescuentos();
+        acumdescuento = acumdescuento + it->getdescuentos(true);
         ++i;
     }
 
     total = acumprecio - acumdescuento;
+    if(total < 0) throw std::exception("el presupuesto es negativo.");
     return total;
 }
 

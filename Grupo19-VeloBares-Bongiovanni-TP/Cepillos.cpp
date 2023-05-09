@@ -9,8 +9,9 @@
  * Cepillos implementation
  */
 
-Cepillos::Cepillos()
+Cepillos::Cepillos( cerdas tipodecerdas_)
 {
+	this->tipodecerdas = tipodecerdas_;
 }
 
 Cepillos::~Cepillos()

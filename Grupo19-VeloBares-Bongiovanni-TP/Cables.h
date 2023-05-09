@@ -11,7 +11,10 @@
 
 class Cables: public ArtElectricidad {
 
-Cables();
+Cables(unsigned int largo_);
 ~Cables();
+
+private:
+	unsigned int largo;
 };
 #endif //_CABLES_H

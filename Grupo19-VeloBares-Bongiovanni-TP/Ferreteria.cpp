@@ -2,24 +2,34 @@
  * Project Untitled
  */
 
-
 #include "Ferreteria.h"
+using namespace std;
+#include <string>
 
 /**
  * Ferreteria implementation
  */
 
+Ferreteria::Ferreteria(string nombref_, string ubicacion_, string horario_, bool abierto_)
+{
+    this->nombref = nombref_;
+    this->ubicacion = ubicacion_;
+    this->horario = horario_;
+    this->abierto = abierto_;
+}
+
+Ferreteria::~Ferreteria()
+{
+}
 
 /**
  * @param ubicacion
  * @return void
  */
-void Ferreteria::set(string ubicacion) {
-    return;
-}
 
 void Ferreteria::set(string ubicacion)
 {
+    return;
 }
 
 /**
@@ -61,6 +71,7 @@ string Ferreteria::getnombref() {
  * @param horario
  * @return void
  */
+
 void Ferreteria::set(string horario) {
     return;
 }

@@ -28,15 +28,13 @@ Cerrajero::~Cerrajero()
 }
 void Cerrajero::copiarllaves(enum tipo llave)
 {
-}
-enum llaves Cerrajero::gettipo() {
-
-    return ;
+    return;
 }
 
 /**
  * @return void
  */
-void Cerrajero::arreglecerraduras() {
+void Cerrajero::arreglecerraduras() 
+{
     return;
 }

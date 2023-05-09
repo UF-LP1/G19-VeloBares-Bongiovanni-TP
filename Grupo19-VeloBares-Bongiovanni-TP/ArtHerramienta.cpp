@@ -26,4 +26,5 @@ ArtHerramienta::~ArtHerramienta()
 
 void ArtHerramienta::alquilar(unsigned int numart)
 {
+	return;
 }

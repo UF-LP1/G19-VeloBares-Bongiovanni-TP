@@ -5,7 +5,6 @@
 
 #ifndef _ARTBAZAR_H
 #define _ARTBAZAR_H
-
 #include "Articulos.h"
 
 
@@ -17,7 +16,9 @@ public:
 /**
  * @param enum bazar estado
  */
-void comprobarestado( enum bazar estado);
+
+void comprobarestado(enum bazar estado);
+
 private: 
     enum bazar estado;
 };

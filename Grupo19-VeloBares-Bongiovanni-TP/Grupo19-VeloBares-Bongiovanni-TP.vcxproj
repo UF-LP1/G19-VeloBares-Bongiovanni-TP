@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ArtBazar.cpp" />
-    <ClCompile Include="ArtBaño.cpp" />
+    <ClCompile Include="ArtBanio.cpp" />
     <ClCompile Include="ArtCerrajeria.cpp" />
     <ClCompile Include="ArtElectricidad.cpp" />
     <ClCompile Include="ArtFerreteria.cpp" />
@@ -163,12 +163,13 @@
     <ClCompile Include="Martillos.cpp" />
     <ClCompile Include="Mechas.cpp" />
     <ClCompile Include="Plomero.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Tablas.cpp" />
     <ClCompile Include="Tenders.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArtBazar.h" />
-    <ClInclude Include="ArtBaño.h" />
+    <ClInclude Include="ArtBanio.h" />
     <ClInclude Include="ArtCerrajeria.h" />
     <ClInclude Include="ArtElectricidad.h" />
     <ClInclude Include="ArtFerreteria.h" />

@@ -3,10 +3,10 @@
  */
 
 
-#include "ArtBaño.h"
+#include "ArtBanio.h"
 
 /**
- * ArtBaño implementation
+ * ArtBanio implementation
  */
 
 
@@ -16,11 +16,9 @@
  */
 
 
-
-
-ArtBanio::ArtBanio()
+ArtBanio::ArtBanio(string color_)
 {
-
+	this->color = color_;
 }
 
 ArtBanio::~ArtBanio()
@@ -29,4 +27,5 @@ ArtBanio::~ArtBanio()
 
 void ArtBanio::elegircolores(string color)
 {
+	return;
 }

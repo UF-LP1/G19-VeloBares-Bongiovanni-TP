@@ -11,7 +11,7 @@
 
 class Despachante: public Empleados {
 public: 
-    Despachante();
+    Despachante(string transporte_);
     ~Despachante();
     
 void entregarproducto();

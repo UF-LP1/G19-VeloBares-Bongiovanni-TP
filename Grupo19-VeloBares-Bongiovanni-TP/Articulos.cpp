@@ -10,9 +10,9 @@
  */
 
 
-Articulos::Articulos(string caracteristicas_, unsigned int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_, list<Articulos> catalogo_)
+Articulos::Articulos(unsigned int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_)
 {
-    this->caracteristicas = caracteristicas_;
+ 
     this->precio = precio_;
     this->repuesto = repuesto_;
     this->tamanyo = tamanyo_;
@@ -20,7 +20,7 @@ Articulos::Articulos(string caracteristicas_, unsigned int precio_, bool repuest
     this->envoltorio = envoltorio_;
     this->stock = stock_;
     this->descuento = descuento_;
-    this->catalogo = catalogo_;
+ 
 }
 
 Articulos::~Articulos()

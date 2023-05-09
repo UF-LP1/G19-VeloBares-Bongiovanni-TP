@@ -6,7 +6,7 @@
 #include <string> 
 #include "Articulos.h" // si no haciamos esto, explotaba todo:,)
 #include "ArtBazar.h"
-#include "ArtBaño.h"
+#include "ArtBanio.h"
 #include "ArtCerrajeria.h"
 #include "ArtElectricidad.h"
 #include "ArtFerreteria.h"
@@ -18,7 +18,7 @@
 
 class Duenyo {
 public: 
-   Duenyo(string nombred,  string DNI, string horariotrabajo, string apellidod);
+   Duenyo(string nombred_,  string DNI_, string horariotrabajo_, string apellidod_);
    ~Duenyo();
 /**
  * @param horariotrabajo
@@ -34,7 +34,7 @@ string get(string DNI);
     
 void abrirlocal();
 
-float generarPresupuesto(list<Articulos> Lista, bool descuento, unsigned int precio);
+float generarPresupuesto(list<Articulos> Lista); //no nos toma
     
 /**
  * @param Cliente.lista

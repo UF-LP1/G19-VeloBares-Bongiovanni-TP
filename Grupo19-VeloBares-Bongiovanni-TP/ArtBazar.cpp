@@ -14,9 +14,6 @@
  * @param enum bazar estado
  * @return void
  */
-void ArtBazar::comprobarestado( enum bazar estado) {
-    return;
-}
 
 ArtBazar::ArtBazar()
 {
@@ -26,6 +23,7 @@ ArtBazar::~ArtBazar()
 {
 }
 
-void ArtBazar::comprobarestado(bazar estado)
+void ArtBazar::comprobarestado(enum bazar estado)
 {
+    return;
 }

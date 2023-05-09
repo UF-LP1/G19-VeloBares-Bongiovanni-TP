@@ -6,14 +6,15 @@
 #ifndef _CEPILLOS_H
 #define _CEPILLOS_H
 
-#include "ArtBaño.h"
-
+#include "ArtBanio.h"
+#include "cerdas.h"
 
 class Cepillos: public ArtBanio {
 private: 
-    Cepillos();
+
+    Cepillos( cerdas tipodecerdas_);
     ~Cepillos();
-    enum cerdas tipodecerdas;
+    cerdas tipodecerdas;
 };
 
 #endif //_CEPILLOS_H

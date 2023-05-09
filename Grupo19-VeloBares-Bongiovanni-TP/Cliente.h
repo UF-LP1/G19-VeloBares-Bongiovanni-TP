@@ -1,6 +1,7 @@
 /**
  * Project Untitled
  */
+
 #include "Duenyo.h"
 #include "Articulos.h"
 #include <list>
@@ -9,9 +10,10 @@
 #include <iostream>
 #include <string> 
 using namespace std;
+
 class Cliente {
 public: 
-    Cliente(string nombrec, string domicilio, unsigned int telefono, const string dni, bool permiso, list<Articulos> Lista);
+    Cliente(string nombrec_, string domicilio_, unsigned int telefono_, const string dni_, bool permiso_, list<Articulos> Lista_);
     ~Cliente();
 /**
  * @param telefono
@@ -33,7 +35,6 @@ void pedirempleados();
 /**
  * @param Duenyo.cobrar
  */
-
     
 void pagar(Duenyo josecito);
 
@@ -44,12 +45,13 @@ string getubicacion();
 /**
  * @param Articulos.precio
  */
-
-    
+  
 void verprecio(Articulos precioArt);
 
+//Articulos agregaralista();
 
-Articulos agregaralista();
+Articulos agregarcarrito(list <Articulos> Lista, Articulos a1, Articulos a2, Articulos a3, Articulos a4);
+
 private: 
     string nombrec;
     string domicilio;
@@ -58,6 +60,5 @@ private:
     bool permiso;
     list<Articulos> Lista;
 };
-
 
 #endif //_CLIENTE_H

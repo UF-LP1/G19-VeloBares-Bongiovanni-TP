@@ -3,15 +3,15 @@
  */
 
 
-#ifndef _ARTBAÑO_H
-#define _ARTBAÑO_H
+#ifndef _ARTBANIO_H
+#define _ARTBANIO_H
 
 #include "Articulos.h"
 
 
 class ArtBanio: public Articulos {
 public: 
-    ArtBanio();
+    ArtBanio(string color_);
     ~ArtBanio();
     
 /**
@@ -22,4 +22,4 @@ private:
     string color;
 };
 
-#endif //_ARTBAÑO_H
+#endif //_ARTBANIO_H

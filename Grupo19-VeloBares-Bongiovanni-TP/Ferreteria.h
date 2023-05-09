@@ -2,6 +2,7 @@
  * Project Untitled
  */
 
+#include <string>
 #include <list>
 #ifndef _FERRETERIA_H
 #define _FERRETERIA_H
@@ -11,6 +12,8 @@ using namespace std;
 
 class Ferreteria {
 public: 
+    Ferreteria(string nombref_, string ubicacion_, string horario_, bool abierto_);
+    ~Ferreteria();
     
 /**
  * @param ubicacion
@@ -19,8 +22,6 @@ void set(string ubicacion);
 
 bool getabierto();
     
-
-    
 void llamarcerrajero();
     
 void llamarplomero();
@@ -28,11 +29,13 @@ void llamarplomero();
 void llamardespachante();
     
 string getnombref();
+
+void set(string horario);
     
 /**
  * @param horario
  */
-void set(string horario);
+
 private: 
     string nombref;
     string ubicacion;

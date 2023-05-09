@@ -8,8 +8,9 @@
 /**
  * Enchufes implementation
  */
-Enchufes::~Enchufes()
+Enchufes::Enchufes( patas tipodepatas_)
 {
+	this->tipodepatas = tipodepatas_;
 }
 Enchufes::~Enchufes()
 {
