@@ -50,13 +50,14 @@ void verprecio(Articulos precioArt);
 
 //Articulos agregaralista();
 
-Articulos agregarcarrito(list <Articulos> Lista, Articulos a1, Articulos a2, Articulos a3, Articulos a4);
+list<Articulos> get_lista();
+void agregarcarrito(Articulos a4);
 
 private: 
     string nombrec;
     string domicilio;
     unsigned int telefono;
-     string dni;
+    string dni;
     bool permiso;
     list<Articulos> Lista;
 };

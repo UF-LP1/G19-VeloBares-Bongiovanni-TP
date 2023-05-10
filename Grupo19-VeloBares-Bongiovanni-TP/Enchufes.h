@@ -12,7 +12,7 @@
 class Enchufes: public ArtElectricidad {
 private: 
 
-    Enchufes( patas tipodepatas_);
+    Enchufes(patas tipodepatas_, unsigned int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_);
     ~Enchufes();
     patas tipodepatas;
 };

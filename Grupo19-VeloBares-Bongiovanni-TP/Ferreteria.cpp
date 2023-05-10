@@ -27,44 +27,59 @@ Ferreteria::~Ferreteria()
  * @return void
  */
 
-void Ferreteria::set(string ubicacion)
+/**
+ * @return bool
+ */
+
+void Ferreteria::setubic(string ubicacion)
+{
+    return;
+}
+
+void Ferreteria::setabierto(bool abierto)
+{
+    return ;
+}
+
+/**
+ * @return void
+ */
+
+void Ferreteria::llamarcerrajero() 
 {
     return;
 }
 
 /**
- * @return bool
- */
-bool Ferreteria::getabierto() {
-    return false;
-}
-
-/**
  * @return void
  */
-void Ferreteria::llamarcerrajero() {
+
+void Ferreteria::llamarplomero() 
+{
     return;
 }
 
 /**
  * @return void
  */
-void Ferreteria::llamarplomero() {
-    return;
-}
 
-/**
- * @return void
- */
-void Ferreteria::llamardespachante() {
+void Ferreteria::llamardespachante()
+{
     return;
 }
 
 /**
  * @return string
  */
-string Ferreteria::getnombref() {
+
+string Ferreteria::getnombref() 
+{
     return this->nombref;
+}
+
+void Ferreteria::sethora(string horario)
+{
+    return;
 }
 
 /**
@@ -72,6 +87,5 @@ string Ferreteria::getnombref() {
  * @return void
  */
 
-void Ferreteria::set(string horario) {
-    return;
-}
+
+

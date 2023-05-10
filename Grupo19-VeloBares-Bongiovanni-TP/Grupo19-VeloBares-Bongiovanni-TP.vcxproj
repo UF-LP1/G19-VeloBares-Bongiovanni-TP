@@ -154,6 +154,7 @@
     <ClCompile Include="Clavos.cpp" />
     <ClCompile Include="Cliente.cpp" />
     <ClCompile Include="Cortinas.cpp" />
+    <ClCompile Include="customEx.cpp" />
     <ClCompile Include="Despachante.cpp" />
     <ClCompile Include="Duenyo.cpp" />
     <ClCompile Include="Empleados.cpp" />
@@ -185,6 +186,7 @@
     <ClInclude Include="Clavos.h" />
     <ClInclude Include="Cliente.h" />
     <ClInclude Include="Cortinas.h" />
+    <ClInclude Include="customEx.h" />
     <ClInclude Include="Despachante.h" />
     <ClInclude Include="Duenyo.h" />
     <ClInclude Include="Empleados.h" />

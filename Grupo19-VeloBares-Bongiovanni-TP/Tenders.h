@@ -11,8 +11,9 @@
 
 class Tenders: public ArtBazar {
 
-	Tenders();
+	Tenders(bazar estado_, unsigned int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_);
 	~Tenders();
+
 };
 
 #endif //_TENDERS_H

@@ -22,7 +22,7 @@ void set(unsigned int preciotrabajo);
 /**
  * @param disponible
  */
-bool get(bool disponible);
+bool set(bool disponible);
     
 /**
  * @param horariodeatencion
@@ -32,12 +32,17 @@ void set(string horariodeatencion);
 string getnombree();
     
 void definirfecha();
+
+string getapellidos();
+
+unsigned int getdnis();
+
 protected: 
     string nombree;
     string horarioatencion;
     unsigned int preciotrabajo;
     bool disponible;
-     unsigned int dnis;
+    unsigned int dnis;
     string apellidos;
     string duracion;
 };

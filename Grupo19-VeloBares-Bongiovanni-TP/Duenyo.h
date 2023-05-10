@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #include <string> 
 #include "Articulos.h" // si no haciamos esto, explotaba todo:,)
 #include "ArtBazar.h"
@@ -23,13 +22,15 @@ public:
 /**
  * @param horariotrabajo
  */
-void set( string horariotrabajo);
-    
 
+void set(string horariotrabajo);
+    
+string getapellidod();
 
 /**
  * @param DNI
  */
+
 string get(string DNI);
     
 void abrirlocal();
@@ -40,7 +41,6 @@ float generarPresupuesto(list<Articulos> Lista); //no nos toma
  * @param Cliente.lista
  */
 
-    
 void atendercliente();
     
 string getnombred();

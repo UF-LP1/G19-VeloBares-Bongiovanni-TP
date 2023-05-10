@@ -11,7 +11,7 @@
 
 class Plomero: public Empleados {
 public: 
-    Plomero();
+    Plomero(string nombree_, string horarioatencion_, unsigned int preciotrabajo_, bool disponible_, unsigned int dnis_, string apellidos_, string duracion_);
     ~Plomero();
     
 void destaparcloaca();

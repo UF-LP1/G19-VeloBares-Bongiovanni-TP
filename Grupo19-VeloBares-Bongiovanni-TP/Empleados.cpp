@@ -9,7 +9,6 @@
  * Empleados implementation
  */
 
-
 Empleados::Empleados(string nombree_, string horarioatencion_, unsigned int preciotrabajo_, bool disponible_,  unsigned int dnis_, string apellidos_, string duracion_)
 {
     this->nombree = nombree_;
@@ -30,7 +29,9 @@ Empleados::~Empleados()
  * @param preciotrabajo
  * @return void
  */
-void Empleados::set(unsigned int preciotrabajo) {
+
+void Empleados::set(unsigned int preciotrabajo) 
+{
     return;
 }
 
@@ -38,7 +39,9 @@ void Empleados::set(unsigned int preciotrabajo) {
  * @param disponible
  * @return bool
  */
-bool Empleados::get(bool disponible) { // como que no recibe?
+
+bool Empleados::set(bool disponible) 
+{ 
     return false;
 }
 
@@ -46,20 +49,36 @@ bool Empleados::get(bool disponible) { // como que no recibe?
  * @param horariodeatencion
  * @return void
  */
-void Empleados::set(string horariodeatencion) {
+
+void Empleados::set(string horariodeatencion) 
+{
     return;
 }
 
 /**
  * @return string
  */
-string Empleados::getnombree() {
+
+string Empleados::getnombree()
+{
     return this->nombree;
+}
+
+string Empleados::getapellidos()
+{
+    return this->apellidos;
+}
+
+unsigned int Empleados::getdnis()
+{
+    return this->dnis;
 }
 
 /**
  * @return void
  */
-void Empleados::definirfecha() {
+
+void Empleados::definirfecha() 
+{
     return;
 }

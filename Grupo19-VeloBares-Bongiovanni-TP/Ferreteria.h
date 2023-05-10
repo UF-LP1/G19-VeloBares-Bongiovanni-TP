@@ -18,9 +18,9 @@ public:
 /**
  * @param ubicacion
  */
-void set(string ubicacion);
+void setubic(string ubicacion);
 
-bool getabierto();
+void setabierto(bool abierto);
     
 void llamarcerrajero();
     
@@ -30,7 +30,7 @@ void llamardespachante();
     
 string getnombref();
 
-void set(string horario);
+void sethora(string horario);
     
 /**
  * @param horario
