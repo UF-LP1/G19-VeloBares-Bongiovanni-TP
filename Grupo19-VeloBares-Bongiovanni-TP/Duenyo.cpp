@@ -109,3 +109,5 @@ string Duenyo::getapellidod()
     return this->apellidod;
 }
 
+
+

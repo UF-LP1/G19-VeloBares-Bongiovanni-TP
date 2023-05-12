@@ -77,6 +77,11 @@ string Ferreteria::getnombref()
     return this->nombref;
 }
 
+string Ferreteria::getubic()
+{
+    return this->ubicacion;
+}
+
 void Ferreteria::sethora(string horario)
 {
     return;

@@ -3,6 +3,7 @@
  */
 
 #include <string> 
+#include <iostream>
 #include "Articulos.h" // si no haciamos esto, explotaba todo:,)
 #include "ArtBazar.h"
 #include "ArtBanio.h"
@@ -10,6 +11,8 @@
 #include "ArtElectricidad.h"
 #include "ArtFerreteria.h"
 #include "ArtHerramienta.h"
+#include "Ferreteria.h"
+
 
 #ifndef _DUENYO_H
 #define _DUENYO_H
@@ -35,7 +38,7 @@ string get(string DNI);
     
 void abrirlocal();
 
-float generarPresupuesto(list<Articulos> Lista); //no nos toma
+float generarPresupuesto(list<Articulos> Lista);
     
 /**
  * @param Cliente.lista

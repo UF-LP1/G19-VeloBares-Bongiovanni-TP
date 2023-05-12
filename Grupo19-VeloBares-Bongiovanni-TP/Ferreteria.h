@@ -30,6 +30,8 @@ void llamardespachante();
     
 string getnombref();
 
+string getubic();
+
 void sethora(string horario);
     
 /**

@@ -1,20 +1,25 @@
 
-
 #include <iostream>
 #include <math.h>
 #include "Duenyo.h"
 #include "Cliente.h"
 #include "Articulos.h"
 #include "Empleados.h"
+#include "Ferreteria.h"
+#include "Duenyo.cpp"
 #include <list>
 
 using namespace std;
+
+//void hacerticket(list<Articulos>Lista, Ferreteria LaLola, float total, Cliente General);
 
 /*El cliente entra por la puerta, agarra artículos y los mete al changuito, (puede consultar el precio, fijarse que este en buenas condiciones, pedir cosas del deposito(stock)). 
 Va a la caja a que le cobre el duenyo; este calcula el precio con el descuento, los va sumando y al final le genera un presupuesto (lo imprime para que el cliente lo vea, como un ticket)*/
 
 int main() {
+
 	list<Articulos> liista;
+	//Ferreteria* LaLolla;
 	Cliente* Saul = new Cliente("Saul", "Lib. 2086", 159976083, "4578932", true, liista);
 	Cliente* Mateo = new Cliente("Mateo", "Heras. 2086", 159978463, "5578932", true, liista);
 	Duenyo* josesito = new Duenyo ("josesito", "4509872", "8am-18pm", "mirabilit");
@@ -42,9 +47,12 @@ int main() {
 	josesito->generarPresupuesto(Saul->get_lista());
 	josesito->generarPresupuesto(Mateo->get_lista());
 
+	//float preciototal = josesito->generarPresupuesto(Saul->get_lista());
+	//hacerticket(liista,*LaLolla,preciototal,*Saul);
+
 	//try de nullptr
 	//try de memoria
-	//class NO_STOCK : public exception{ (va dentro de un .h y cpp, junto con las demas exceptions)
+	//class NO_STOCK : public exception{ (va dentro de un .h y un cpp, junto con las demas exceptions)
 
 	try
 	{//nunca va a fallar 
@@ -59,3 +67,12 @@ int main() {
 	return 0;
 }
 
+/*void hacerticket(list<Articulos>Lista, Ferreteria LaLola, float total, Cliente General) //hacerla en duenyo
+{
+	cout << LaLola.getnombref() << endl;
+	cout << LaLola.getubic() << endl;
+	//cout << General.get_lista() << endl; (sobrecarga)
+	cout << total << endl;
+
+	return;
+}*/
