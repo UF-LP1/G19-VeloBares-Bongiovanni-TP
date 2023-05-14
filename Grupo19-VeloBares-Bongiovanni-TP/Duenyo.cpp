@@ -111,18 +111,19 @@ string Duenyo::getapellidod()
     return this->apellidod;
 }
 
- ostream& operator <<(ostream& out,list<Articulos> lista, Cliente General)
+ ostream& operator<<(ostream& out, Cliente General)
 {
- 
-    out << General.get_lista() << endl;
-    return out;
+     out << General.get_lista() << endl; 
+     return out;
 }
+ 
+ //Tenes que indicarle los atributos de cada articulo de la lista que queres imprimir. 
+ //Por cada uno de los elementos, impriman por ejemplo el nombre y el precio, y deberia funcionar!
 
-void hacerticket(list<Articulos>Lista, Ferreteria LaLola, float total, Cliente General) 
-{cout << LaLola.getnombref() << endl;
+void hacerticket(list<Articulos>Lista, Ferreteria LaLola, float total, Cliente *General)
+{
+    cout << LaLola.getnombref() << endl;
     cout << LaLola.getubic( ) << endl;
-    cout << General.get_lista (  ) << endl;
-    //cout << General.get_lista() << endl; (sobrecarga)
     cout << total << endl;
 
     return;

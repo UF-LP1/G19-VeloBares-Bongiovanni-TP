@@ -2,12 +2,10 @@
  * Project Untitled
  */
 
-
 #ifndef _ARTHERRAMIENTA_H
 #define _ARTHERRAMIENTA_H
 
 #include "Articulos.h"
-
 
 class ArtHerramienta: public Articulos {
 public: 
@@ -17,7 +15,11 @@ public:
 /**
  * @param unsigned int num-art
  */
-void alquilar( unsigned int numart);
+
+void alquilar(unsigned int numart, unsigned int precio);
+
+unsigned int getprecioherramienta();
+
 };
 
 #endif //_ARTHERRAMIENTA_H

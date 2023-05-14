@@ -3,6 +3,7 @@
  */
 
 #include "ArtHerramienta.h"
+#include <iostream>
 
 /**
  * ArtHerramienta implementation
@@ -21,8 +22,16 @@ ArtHerramienta::~ArtHerramienta()
 {
 }
 
-void ArtHerramienta::alquilar(unsigned int numart)
+unsigned int ArtHerramienta::getprecioherramienta()
 {
-	
+	return this->getprecioherramienta();
+}
+
+void ArtHerramienta::alquilar(unsigned int numart, unsigned int precio)
+{
+	if (getprecioherramienta() > 900)
+	{
+		cout << "Podrá alquilarla. Se le cobrará un seguro que en caso de devolver en iguales condiciones, se le devolverá." << endl;
+	}
 	return;
 }

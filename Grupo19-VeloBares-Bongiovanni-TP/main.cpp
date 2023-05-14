@@ -1,5 +1,4 @@
 
-
 #include <iostream>
 #include <math.h>
 #include "Duenyo.h"
@@ -7,14 +6,12 @@
 #include "Articulos.h"
 #include "Empleados.h"
 #include "Ferreteria.h"
-
 #include <list>
 
 using namespace std;
-//ostream& operator<<(ostream& out, Cliente& lol);
+ostream& operator<<(ostream& out, Cliente& Saul);
 
 //void hacerticket(list<Articulos>Lista, Ferreteria LaLola, float total, Cliente General);
-
 
 /*El cliente entra por la puerta, agarra artículos y los mete al changuito, (puede consultar el precio, fijarse que este en buenas condiciones, pedir cosas del deposito(stock)). 
 Va a la caja a que le cobre el duenyo; este calcula el precio con el descuento, los va sumando y al final le genera un presupuesto (lo imprime para que el cliente lo vea, como un ticket)*/
@@ -22,7 +19,7 @@ Va a la caja a que le cobre el duenyo; este calcula el precio con el descuento, 
 int main() {
 
 	list<Articulos> liista;
-	//Ferreteria* LaLolla;
+	Ferreteria *LaLolla;
 	Cliente* Saul = new Cliente("Saul", "Lib. 2086", 159976083, "4578932", true, liista);
 	Cliente* Mateo = new Cliente("Mateo", "Heras. 2086", 159978463, "5578932", true, liista);
 	Duenyo* josesito = new Duenyo ("josesito", "4509872", "8am-18pm", "mirabilit");
@@ -49,13 +46,13 @@ int main() {
 
 	josesito->generarPresupuesto(Saul->get_lista());
 	josesito->generarPresupuesto(Mateo->get_lista());
+	
+	float preciototal = josesito->generarPresupuesto(Saul->get_lista());
 
-	//float preciototal = josesito->generarPresupuesto(Saul->get_lista());
-	//hacerticket(liista,*LaLolla,preciototal,*Saul);
-
-	//try de nullptr
-	//try de memoria
-	//class NO_STOCK : public exception{ (va dentro de un .h y un cpp, junto con las demas exceptions)
+	void hacerticket(liista,*LaLolla,preciototal,*Saul);
+	ostream& operator<<(ostream & out, Cliente & Saul);
+	bool chequearenvoltorio(bool envoltorio);
+	void alquilar(unsigned int numart, unsigned int precio);
 
 	try
 	{//nunca va a fallar 
@@ -70,24 +67,15 @@ int main() {
 	return 0;
 }
 
-/**ostream& operator<<(ostream& out, Cliente& lol) {
-	list<Articulos> ::iterator it = lol.get_lista().begin();
-	for (it = lol.get_lista().begin(); it != lol.get_lista().end(); it++) {
+ostream& operator<<(ostream& out, Cliente& Saul) 
+{
+	list<Articulos> ::iterator it = Saul.get_lista().begin();
+	for (it = Saul.get_lista().begin(); it != Saul.get_lista().end(); it++) 
+	{
 		unsigned int f = it->getpreciodeart();
 		out << f << endl;
-
-
 	}
 
 	return out;
-}/* igualaar el iterator al inicio de la lista de saul y con un for imprimir...
-
-void hacerticket(list<Articulos>Lista, Ferreteria LaLola, float total, Cliente General) //hacerla en duenyo
-{
-	cout << LaLola.getnombref() << endl;
-	cout << LaLola.getubic() << endl;
-	//cout << General.get_lista() << endl; (sobrecarga)
-	cout << total << endl;
-
-	return;
-}*/
+} //igualaar el iterator al inicio de la lista de saul y con un for imprimir...
+ 

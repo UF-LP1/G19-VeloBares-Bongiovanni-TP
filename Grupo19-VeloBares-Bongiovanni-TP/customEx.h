@@ -7,13 +7,10 @@ using namespace std;
 
 
 class NegValue : public exception
-	{
 
-		const char* what() const throw (); //const?
-	};
-
-
-	
+{
+	const char* what() const throw (); //const?
+};
 
 
 #endif //_CUSTOMEX_H

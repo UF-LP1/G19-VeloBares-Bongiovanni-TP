@@ -19,7 +19,3 @@ ArtFerreteria::~ArtFerreteria()
 {
 }
 
-bool ArtFerreteria::chequearenvoltorio(bool envoltorio) 
-{
-    return false;
-}

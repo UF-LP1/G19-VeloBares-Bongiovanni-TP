@@ -36,19 +36,18 @@ string getapellidod();
  */
 
 string get(string DNI);
-
-
     
 void abrirlocal();
 
 float generarPresupuesto(list<Articulos> Lista);
-
 
 friend ostream& operator<< (ostream& out,  list<Articulos> lista);
     
 void atendercliente();
     
 string getnombred();
+
+void hacerticket(list<Articulos>Lista, Ferreteria LaLola, float total, Cliente* General);
 
 private: 
     string nombred;

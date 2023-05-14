@@ -16,7 +16,7 @@ public:
 /**
  * @param envoltorio
  */
-bool chequearenvoltorio(bool envoltorio);
+
 };
 
 #endif //_ARTFERRETERIA_H

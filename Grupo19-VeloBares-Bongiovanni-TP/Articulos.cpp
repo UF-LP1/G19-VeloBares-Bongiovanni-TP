@@ -1,14 +1,14 @@
 /**
  * Project Untitled
  */
-#include <list>
 
+#include <list>
+#include <iostream>
 #include "Articulos.h"
 
 /**
  * Articulos implementation
  */
-
 
 Articulos::Articulos(unsigned int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_)
 {
@@ -27,12 +27,13 @@ Articulos::~Articulos()
 {
 }
 
-
 /**
  * @param precio
  * @return void
  */
-void Articulos::setpreciodeart(unsigned int precio) { //cambie el nombre de los get y set 
+
+void Articulos::setpreciodeart(unsigned int precio) 
+{  
     return;
 }
 
@@ -40,7 +41,9 @@ void Articulos::setpreciodeart(unsigned int precio) { //cambie el nombre de los 
  * @param num-art
  * @return unsigned int
  */
-unsigned int Articulos::getnumerodeart(unsigned int numart) {
+
+unsigned int Articulos::getnumerodeart(unsigned int numart) 
+{
     return this-> numart;
 }
 
@@ -48,7 +51,6 @@ unsigned int Articulos::getnumerodeart(unsigned int numart) {
  * @param stock
  * @return bool
  */
-
 
 bool Articulos::getstockproducto(bool stock)
 {
@@ -58,7 +60,9 @@ bool Articulos::getstockproducto(bool stock)
 /**
  * @return void
  */
-void Articulos::reponerstock() {
+
+void Articulos::reponerstock() 
+{
     return;
 }
 
@@ -66,11 +70,13 @@ void Articulos::reponerstock() {
  * @param descuento
  * @return void
  */
-void Articulos::setdescuentos(bool descuento) {
+
+void Articulos::setdescuentos(bool descuento) 
+{
     return;
 }
 
-bool Articulos::getdescuentos(bool descuento) //ahora recibe
+bool Articulos::getdescuentos(bool descuento) 
 {
     return false;
 }
@@ -78,4 +84,16 @@ bool Articulos::getdescuentos(bool descuento) //ahora recibe
 unsigned int Articulos::getpreciodeart()
 {
     return this-> precio;
+}
+
+bool Articulos::chequearenvoltorio(bool envoltorio)
+{
+    //1=TRUE, 0=FALSE
+
+    if (envoltorio == 1)
+        cout << "tiene cambio" << endl;
+    else
+        cout << "no tiene cambio" << endl;
+
+    return false;
 }
