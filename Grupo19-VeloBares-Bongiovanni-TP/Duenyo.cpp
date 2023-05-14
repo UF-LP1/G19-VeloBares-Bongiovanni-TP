@@ -4,8 +4,10 @@
 
 #include "Duenyo.h"
 #include "customEx.h"
+#include "Cliente.h"
+#include "Ferreteria.h"
 
-using namespace std
+using namespace std;
 
 /**
  * Duenyo implementation
@@ -76,7 +78,7 @@ float Duenyo::generarPresupuesto(list<Articulos> Lista)
     total = acumprecio - acumdescuento;
 
     // if(total < 0) throw std::exception("el presupuesto es negativo.");
-    if (total < 0) throw ExNums::NegValue();
+    if (total < 0) throw NegValue ( );
 
     return total;
 }
@@ -109,5 +111,22 @@ string Duenyo::getapellidod()
     return this->apellidod;
 }
 
+ ostream& operator <<(ostream& out,list<Articulos> lista, Cliente General)
+{
+ 
+    out << General.get_lista() << endl;
+    return out;
+}
 
+void hacerticket(list<Articulos>Lista, Ferreteria LaLola, float total, Cliente General) 
+{cout << LaLola.getnombref() << endl;
+    cout << LaLola.getubic( ) << endl;
+    cout << General.get_lista (  ) << endl;
+    //cout << General.get_lista() << endl; (sobrecarga)
+    cout << total << endl;
 
+    return;
+}
+    
+
+    

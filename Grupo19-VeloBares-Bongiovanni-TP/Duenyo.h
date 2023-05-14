@@ -12,6 +12,7 @@
 #include "ArtFerreteria.h"
 #include "ArtHerramienta.h"
 #include "Ferreteria.h"
+#include "customEx.h"
 
 
 #ifndef _DUENYO_H
@@ -35,15 +36,16 @@ string getapellidod();
  */
 
 string get(string DNI);
+
+
     
 void abrirlocal();
 
 float generarPresupuesto(list<Articulos> Lista);
-    
-/**
- * @param Cliente.lista
- */
 
+
+friend ostream& operator<< (ostream& out,  list<Articulos> lista);
+    
 void atendercliente();
     
 string getnombred();

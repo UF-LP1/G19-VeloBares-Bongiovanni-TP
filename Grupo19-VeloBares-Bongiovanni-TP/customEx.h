@@ -2,16 +2,18 @@
 #define _CUSTOMEX_H
 
 #include <exception>
-
+#include <string>
 using namespace std;
 
-namespace ExNums {
-	class NegValue : public exception {
 
-	class NegValue : public exception; 
+class NegValue : public exception
 	{
-		Const char* what() const throw ();
+
+		const char* what() const throw (); //const?
 	};
-}
+
+
+	
+
 
 #endif //_CUSTOMEX_H
