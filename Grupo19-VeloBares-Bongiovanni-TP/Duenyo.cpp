@@ -110,7 +110,7 @@ string Duenyo::getapellidod()
     return this->apellidod;
 }
 
- ostream& operator<<(ostream& out, Cliente *General)
+ostream& operator<<(ostream& out, Cliente* General)
 {
      void verprecio(Articulos precioArt);
      list<Articulos> Lista = General->get_lista();
@@ -124,14 +124,15 @@ string Duenyo::getapellidod()
      return out;
 }
 
-void hacerticket(Ferreteria LaLola, float total)
+void Duenyo:: hacerticket(Ferreteria LaLola)
 {
     cout << LaLola.getnombref() << endl;
     cout << LaLola.getubic( ) << endl;
-    cout << total << endl;
-
     return;
 }
-    
+void Duenyo:: imprimirtotal(float total)
+{
+    cout << total << endl;
+    return;
+}
 
-    

@@ -15,6 +15,7 @@ public:
     ~ArtElectricidad();
     
 void probarfuncion();
+void mostrar();
 };
 
 #endif //_ARTELECTRICIDAD_H

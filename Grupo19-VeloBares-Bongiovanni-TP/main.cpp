@@ -22,20 +22,20 @@ int main() {
 	Cliente *Mateo = new Cliente("Mateo", "Heras. 2086", 159978463, "5578932", true, liista);
 	Duenyo *josesito = new Duenyo ("josesito", "4509872", "8am-18pm", "mirabilit");
 
-	Articulos a1 (200, true, 50, 1, true, true, true);
-	Articulos a2(1000, true, 80, 2, true, true, false);
-	Articulos a3(88, false, 190, 3, false, true, false);
-	Articulos a4(300, true, 55, 4, false, true, true);
+	Articulos a1 ("Martillo", 200, true, 50, 1, true, true, true);
+	Articulos a2("tabla", 1000, true, 80, 2, true, true, false);
+	Articulos a3("Cortina", 88, false, 190, 3, false, true, false);
+	Articulos a4("Clavo", 300, true, 55, 4, false, true, true);
 
 	Saul->agregarcarrito(a1);
 	Saul->agregarcarrito(a2);
 	Saul->agregarcarrito(a3);
 	Saul->agregarcarrito(a4);
 
-	Articulos a5(200, true, 50, 1, true, true, true);
-	Articulos a6(-1000, true ,80, 2, true, true, false);
-	Articulos a7(88, false, 190, 3, false, true, false);
-	Articulos a8(300, true, 55, 4, false, true, true);
+	Articulos a5("Martillo", 0, true, 50, 1, true, true, true);
+	Articulos a6("Tabla",  0, true, 80, 2, true, true, false);
+	Articulos a7("Cortina", 0, false, 190, 3, false, true, false);
+	Articulos a8("Clavo", (-1), true, 55, 4, false, true, true); // depuramos y NO TOMA EL NUMERO NEGATIVO, LO LEVANTA COMO BASURAA
 
 	Mateo->agregarcarrito(a5);
 	Mateo->agregarcarrito(a6);
@@ -49,6 +49,7 @@ int main() {
 
 	void hacerticket(Ferreteria LaLola, float total);
 	ostream& operator<<(ostream & out, Cliente *Saul);
+	void imprimirtotal(float total);
 	bool chequearenvoltorio(bool envoltorio);
 	void alquilar(unsigned int numart, unsigned int precio);
 
@@ -65,7 +66,7 @@ int main() {
 	return 0;
 }
 
-ostream& operator<<(ostream& out, Cliente& Saul) 
+/**ostream& operator<<(ostream& out, Cliente& Saul)
 {
 	list<Articulos> ::iterator it = Saul.get_lista().begin();
 	for (it = Saul.get_lista().begin(); it != Saul.get_lista().end(); it++) 
@@ -74,6 +75,6 @@ ostream& operator<<(ostream& out, Cliente& Saul)
 		out << f << endl;
 	}
 
-	return out;
-} //igualaar el iterator al inicio de la lista de saul y con un for imprimir...
+	return out; }/**/
+ //igualaar el iterator al inicio de la lista de saul y con un for imprimir...
  

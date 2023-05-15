@@ -16,7 +16,7 @@ public:
 /**
  * @param enum bazar estado
  */
-
+   void mostrar();
 void comprobarestado(bazar estado);
 
 private: 

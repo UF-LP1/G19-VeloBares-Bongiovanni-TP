@@ -19,7 +19,7 @@ public:
 void alquilar(unsigned int numart,  int precio);
 
 unsigned int getprecioherramienta();
-
+void mostrar();
 };
 
 #endif //_ARTHERRAMIENTA_H

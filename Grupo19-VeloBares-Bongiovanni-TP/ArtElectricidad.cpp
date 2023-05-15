@@ -3,7 +3,7 @@
  */
 
 #include "ArtElectricidad.h"
-
+#include <iostream>
 /**
  * ArtElectricidad implementation
  */
@@ -21,4 +21,12 @@ ArtElectricidad::~ArtElectricidad()
 void ArtElectricidad::probarfuncion() 
 {
     return;
+}
+
+void ArtElectricidad::mostrar()
+{
+	cout << "Nombre del Articulo es:" << this->nombreart << endl;
+	cout << "Precio del Articulo es:" << this->precio << endl;
+	cout << "Numero del Articulo es:" << this->numart << endl;
+	return;
 }

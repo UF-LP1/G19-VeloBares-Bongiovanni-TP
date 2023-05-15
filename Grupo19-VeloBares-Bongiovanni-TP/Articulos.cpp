@@ -10,7 +10,7 @@
  * Articulos implementation
  */
 
-Articulos::Articulos(string nombreart_, int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_)
+Articulos:: Articulos (string nombreart_, int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_)
 {
     this->nombreart = nombreart_;
     this->precio = precio_;
@@ -25,6 +25,15 @@ Articulos::Articulos(string nombreart_, int precio_, bool repuesto_, unsigned in
 
 Articulos::~Articulos()
 {
+}
+
+void Articulos::mostrar()
+{
+    cout << "Nombre del Articulo es:" << this->nombreart << endl;
+    cout << "Precio del Articulo es:" << this->precio << endl;
+    cout << "Numero del Articulo es:" << this->numart << endl;
+ 
+    return;
 }
 
 /**

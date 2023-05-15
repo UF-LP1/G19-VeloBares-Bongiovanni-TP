@@ -17,6 +17,7 @@ public:
 /**
  * @param string color
  */
+ void mostrar();
 void elegircolores( string color);
 private: 
     string color;

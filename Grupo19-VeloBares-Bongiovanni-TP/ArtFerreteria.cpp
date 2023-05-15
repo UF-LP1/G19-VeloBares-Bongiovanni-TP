@@ -3,6 +3,7 @@
  */
 
 #include "ArtFerreteria.h"
+#include <iostream>
 
 /**
  * ArtFerreteria implementation
@@ -18,4 +19,12 @@ ArtFerreteria::ArtFerreteria(string nombreart_, int precio_, bool repuesto_, uns
 ArtFerreteria::~ArtFerreteria()
 {
 }
+
+void ArtFerreteria::mostrar() {
+	cout << "Nombre del Articulo es:" << this->nombreart << endl;
+	cout << "Precio del Articulo es:" << this->precio << endl;
+	cout << "Numero del Articulo es:" << this->numart << endl;
+	return;
+}
+
 

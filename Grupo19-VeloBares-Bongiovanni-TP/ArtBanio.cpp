@@ -22,6 +22,10 @@ ArtBanio::~ArtBanio()
 {
 }
 
+void ArtBanio::mostrar()
+{
+}
+
 void ArtBanio::elegircolores(string color)
 {
 	return;

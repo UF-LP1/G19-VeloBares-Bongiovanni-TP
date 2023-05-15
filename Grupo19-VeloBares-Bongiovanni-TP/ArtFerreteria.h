@@ -16,7 +16,7 @@ public:
 /**
  * @param envoltorio
  */
-
+    void mostrar();
 };
 
 #endif //_ARTFERRETERIA_H

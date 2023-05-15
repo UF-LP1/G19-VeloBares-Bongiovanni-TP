@@ -22,9 +22,18 @@ ArtHerramienta::~ArtHerramienta()
 {
 }
 
+
 unsigned int ArtHerramienta::getprecioherramienta()
 {
-	return this->getprecioherramienta();
+	return this-> precio;
+}
+
+void ArtHerramienta::mostrar()
+{
+	cout << "Nombre del Articulo es:" << this->nombreart << endl;
+	cout << "Precio del Articulo es:" << this->precio << endl;
+	cout << "Numero del Articulo es:" << this->numart << endl;
+	return;
 }
 
 void ArtHerramienta::alquilar(unsigned int numart,  int precio)

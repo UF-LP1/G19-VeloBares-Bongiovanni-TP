@@ -10,13 +10,13 @@ using namespace std;
 
 class Articulos {
 public:
-    Articulos( int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_);
+    Articulos( string nombreart, int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_);
     ~Articulos()
-
+ 
 /**
  * @param precio
  */;
-
+    virtual void mostrar();
 void setpreciodeart( int precio);
     
 /**

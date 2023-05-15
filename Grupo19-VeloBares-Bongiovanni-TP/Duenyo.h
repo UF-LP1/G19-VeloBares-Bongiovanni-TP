@@ -35,14 +35,15 @@ void abrirlocal();
 
 float generarPresupuesto(list<Articulos> Lista);
 
-friend ostream& operator<< (ostream& out,  list<Articulos> lista);
+friend ostream& operator<<(ostream& out, Cliente* General);
     
 void atendercliente();
     
 string getnombred();
 
-void hacerticket(Ferreteria LaLola, float total);
+void hacerticket(Ferreteria LaLola);
 
+void imprimirtotal(float total);
 private: 
     string nombred;
     string DNI;
