@@ -15,11 +15,15 @@ public:
     ~Despachante();
     
 void entregarproducto(Cliente Camila);
+
+void definirfecha(); //agregue virtual
     
 /**
  * @param transporte
  */
+
 void set(string transporte);
+
 private: 
     string transporte;
 };

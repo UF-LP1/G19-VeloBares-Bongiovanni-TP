@@ -95,15 +95,16 @@ string Cliente::getubicacion()
  * @return void
  */
 
-void Cliente::verprecio(Articulos precioArt) { //tiene que poder ver el precio
+void Cliente::verprecio(Articulos precioArt) //tiene que poder ver el precio
+{ 
     int _i=0;
 
-        list<Articulos>::iterator it = Lista.begin();
-        for (int i = 0; i < _i; i++) 
-        {
-            it++;
-            cout << it->getpreciodeart() << endl;
-        }
+    list<Articulos>::iterator it = Lista.begin();
+    for (int i = 0; i < _i; i++) 
+    {
+        it++;
+        cout << it->getpreciodeart() << endl;
+    }
     
     return; 
 }

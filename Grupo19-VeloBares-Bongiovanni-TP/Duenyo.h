@@ -4,16 +4,10 @@
 
 #include <string> 
 #include <iostream>
-#include "Articulos.h" // si no haciamos esto, explotaba todo:,)
-#include "ArtBazar.h"
-#include "ArtBanio.h"
-#include "ArtCerrajeria.h"
-#include "ArtElectricidad.h"
-#include "ArtFerreteria.h"
-#include "ArtHerramienta.h"
+#include "Articulos.h" 
 #include "Ferreteria.h"
+#include "Cliente.h"
 #include "customEx.h"
-
 
 #ifndef _DUENYO_H
 #define _DUENYO_H
@@ -47,7 +41,7 @@ void atendercliente();
     
 string getnombred();
 
-void hacerticket(list<Articulos>Lista, Ferreteria LaLola, float total, Cliente* General);
+void hacerticket(list<Articulos> Lista, Ferreteria LaLola, float total, Cliente *General);
 
 private: 
     string nombred;

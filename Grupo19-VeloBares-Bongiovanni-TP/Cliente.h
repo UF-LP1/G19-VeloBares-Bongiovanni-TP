@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-#include "Duenyo.h"
 #include "Articulos.h"
 #include <list>
 #ifndef _CLIENTE_H
@@ -36,7 +35,7 @@ void pedirempleados();
  * @param Duenyo.cobrar
  */
     
-void pagar(Duenyo josecito);
+//void pagar(Duenyo josecito);
 
 string getnombrec();
     

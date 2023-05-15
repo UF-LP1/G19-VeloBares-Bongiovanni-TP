@@ -15,6 +15,9 @@ public:
     ~Plomero();
     
 void destaparcloaca();
+
+void definirfecha(); //agregue virtual
+
 };
 
 #endif //_PLOMERO_H

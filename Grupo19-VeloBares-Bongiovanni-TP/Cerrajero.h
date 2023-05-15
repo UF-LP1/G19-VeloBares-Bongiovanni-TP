@@ -21,6 +21,8 @@ void copiarllaves(enum tipo llave);
     
 void arreglecerraduras();
 
+void definirfecha(); //agregue virtual
+
 };
 
 #endif //_CERRAJERO_H

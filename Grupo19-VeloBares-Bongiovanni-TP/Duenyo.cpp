@@ -5,6 +5,7 @@
 #include "Duenyo.h"
 #include "customEx.h"
 #include "Cliente.h"
+#include "Articulos.h"
 #include "Ferreteria.h"
 
 using namespace std;
@@ -70,9 +71,7 @@ float Duenyo::generarPresupuesto(list<Articulos> Lista)
     
     {
         acumprecio = acumprecio + it->getpreciodeart();
-       
         acumdescuento = acumdescuento + it->getdescuentos(true);
-        
     }
 
     total = acumprecio - acumdescuento;
@@ -111,16 +110,19 @@ string Duenyo::getapellidod()
     return this->apellidod;
 }
 
- ostream& operator<<(ostream& out, Cliente General)
+ ostream& operator<<(ostream& out, Cliente *General)
 {
-     out << General.get_lista() << endl; 
+     void verprecio(Articulos precioArt);
+     list<Articulos> Lista = General->get_lista();
+     int _i = 0;
+     list<Articulos>::iterator it = Lista.begin();
+     for (list<Articulos>::iterator it = Lista.begin(); it != Lista.end(); ++it)
+     out << Lista->*verprecio() << endl;
+     //Por cada uno de los elementos impriman el precio
      return out;
 }
- 
- //Tenes que indicarle los atributos de cada articulo de la lista que queres imprimir. 
- //Por cada uno de los elementos, impriman por ejemplo el nombre y el precio, y deberia funcionar!
 
-void hacerticket(list<Articulos>Lista, Ferreteria LaLola, float total, Cliente *General)
+void hacerticket(list<Articulos> Lista, Ferreteria LaLola, float total, Cliente *General)
 {
     cout << LaLola.getnombref() << endl;
     cout << LaLola.getubic( ) << endl;

@@ -31,7 +31,7 @@ void set(string horariodeatencion);
     
 string getnombree();
     
-void definirfecha();
+virtual void definirfecha(); //agregue virtual
 
 string getapellidos();
 
