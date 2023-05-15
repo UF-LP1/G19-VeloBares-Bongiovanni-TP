@@ -10,14 +10,14 @@ using namespace std;
 
 class Articulos {
 public:
-    Articulos(unsigned int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_);
+    Articulos( int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_);
     ~Articulos()
 
 /**
  * @param precio
  */;
 
-void setpreciodeart(unsigned int precio);
+void setpreciodeart( int precio);
     
 /**
  * @param num-art
@@ -46,7 +46,8 @@ unsigned int getpreciodeart();
 bool chequearenvoltorio(bool envoltorio);
 
 protected:   // ATRIBUTOS DEL ARTICULOSSS
-    unsigned int precio;
+    string nombreart;
+    int precio;
     bool repuesto;
     unsigned int tamanyo;
     unsigned int numart;

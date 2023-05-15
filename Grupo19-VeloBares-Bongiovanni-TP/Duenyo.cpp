@@ -117,12 +117,14 @@ string Duenyo::getapellidod()
      int _i = 0;
      list<Articulos>::iterator it = Lista.begin();
      for (list<Articulos>::iterator it = Lista.begin(); it != Lista.end(); ++it)
-     out << Lista->*verprecio() << endl;
+     {
+         out << it->getpreciodeart() << endl;
+     }
      //Por cada uno de los elementos impriman el precio
      return out;
 }
 
-void hacerticket(list<Articulos> Lista, Ferreteria LaLola, float total, Cliente *General)
+void hacerticket(Ferreteria LaLola, float total)
 {
     cout << LaLola.getnombref() << endl;
     cout << LaLola.getubic( ) << endl;

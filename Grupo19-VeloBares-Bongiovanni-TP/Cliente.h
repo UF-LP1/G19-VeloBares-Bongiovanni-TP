@@ -53,8 +53,6 @@ list<Articulos> get_lista();
 
 void agregarcarrito(Articulos a4);
 
-
-
 private: 
     string nombrec;
     string domicilio;

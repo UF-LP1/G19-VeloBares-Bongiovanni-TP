@@ -47,13 +47,10 @@ int main() {
 	
 	float preciototal = josesito->generarPresupuesto(Saul->get_lista());
 
-	void hacerticket(list<Articulos> liista, Ferreteria LaLola, float total, Cliente *Saul);
+	void hacerticket(Ferreteria LaLola, float total);
 	ostream& operator<<(ostream & out, Cliente *Saul);
 	bool chequearenvoltorio(bool envoltorio);
 	void alquilar(unsigned int numart, unsigned int precio);
-
-	//cout << josesito->hacerticket(liista,*LaLolla,preciototal,Saul) << endl;
-	//cout << &operator<<(out,Saul) << endl;
 
 	try
 	{//nunca va a fallar 

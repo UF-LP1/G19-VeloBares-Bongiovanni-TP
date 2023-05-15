@@ -16,7 +16,7 @@ public:
     
 void entregarproducto(Cliente Camila);
 
-void definirfecha(); //agregue virtual
+
     
 /**
  * @param transporte

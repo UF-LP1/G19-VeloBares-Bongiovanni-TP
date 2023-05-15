@@ -10,9 +10,9 @@
  * Articulos implementation
  */
 
-Articulos::Articulos(unsigned int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_)
+Articulos::Articulos(string nombreart_, int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_)
 {
- 
+    this->nombreart = nombreart_;
     this->precio = precio_;
     this->repuesto = repuesto_;
     this->tamanyo = tamanyo_;
@@ -32,7 +32,7 @@ Articulos::~Articulos()
  * @return void
  */
 
-void Articulos::setpreciodeart(unsigned int precio) 
+void Articulos::setpreciodeart( int precio) 
 {  
     return;
 }

@@ -16,7 +16,7 @@ public:
     
 void destaparcloaca();
 
-void definirfecha(); //agregue virtual
+
 
 };
 

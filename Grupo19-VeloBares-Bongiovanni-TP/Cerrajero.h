@@ -21,7 +21,6 @@ void copiarllaves(enum tipo llave);
     
 void arreglecerraduras();
 
-void definirfecha(); //agregue virtual
 
 };
 

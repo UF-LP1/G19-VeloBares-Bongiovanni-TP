@@ -9,14 +9,14 @@
 
 class ArtHerramienta: public Articulos {
 public: 
-    ArtHerramienta(unsigned int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_);
+    ArtHerramienta(string nombreart_, int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_);
     ~ArtHerramienta();
     
 /**
  * @param unsigned int num-art
  */
 
-void alquilar(unsigned int numart, unsigned int precio);
+void alquilar(unsigned int numart,  int precio);
 
 unsigned int getprecioherramienta();
 

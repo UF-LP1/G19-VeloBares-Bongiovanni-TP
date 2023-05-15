@@ -113,7 +113,6 @@ void Cliente::verprecio(Articulos precioArt) //tiene que poder ver el precio
  * @return void
  */
 
- 
 list<Articulos> Cliente::get_lista()
 {
     return this->Lista;

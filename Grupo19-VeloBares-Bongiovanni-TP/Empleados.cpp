@@ -78,7 +78,7 @@ unsigned int Empleados::getdnis()
  * @return void
  */
 
-void Empleados::definirfecha() //agregue virtual
+void Empleados::definirfecha() 
 {
     return;
 }

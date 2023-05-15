@@ -41,7 +41,7 @@ void atendercliente();
     
 string getnombred();
 
-void hacerticket(list<Articulos> Lista, Ferreteria LaLola, float total, Cliente *General);
+void hacerticket(Ferreteria LaLola, float total);
 
 private: 
     string nombred;
