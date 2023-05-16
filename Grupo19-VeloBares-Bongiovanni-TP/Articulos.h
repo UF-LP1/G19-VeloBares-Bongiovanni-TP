@@ -16,7 +16,9 @@ public:
 /**
  * @param precio
  */;
-    virtual void mostrar();
+
+virtual void mostrar();
+
 void setpreciodeart( int precio);
     
 /**

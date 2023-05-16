@@ -2,12 +2,10 @@
  * Project Untitled
  */
 
-
 #ifndef _ARTBANIO_H
 #define _ARTBANIO_H
 
 #include "Articulos.h"
-
 
 class ArtBanio: public Articulos {
 public: 
@@ -17,8 +15,10 @@ public:
 /**
  * @param string color
  */
- void mostrar();
-void elegircolores( string color);
+
+void mostrar();
+void elegircolores(string color);
+
 private: 
     string color;
 };

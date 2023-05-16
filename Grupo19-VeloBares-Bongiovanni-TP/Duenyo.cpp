@@ -76,7 +76,7 @@ float Duenyo::generarPresupuesto(list<Articulos> Lista)
 
     total = acumprecio - acumdescuento;
 
-    // if(total < 0) throw std::exception("el presupuesto es negativo.");
+    //if(total < 0) throw std::exception("el presupuesto es negativo.");
     if (total < 0) throw NegValue ( );
 
     return total;
@@ -119,7 +119,10 @@ ostream& operator<<(ostream& out, Cliente* General)
      for (list<Articulos>::iterator it = Lista.begin(); it != Lista.end(); ++it)
      {
          out << it->getpreciodeart() << endl;
+         //out << it->mostrar() << endl;
      }
+
+     //imprimir virtual
      //Por cada uno de los elementos impriman el precio
      return out;
 }
@@ -130,6 +133,7 @@ void Duenyo:: hacerticket(Ferreteria LaLola)
     cout << LaLola.getubic( ) << endl;
     return;
 }
+
 void Duenyo:: imprimirtotal(float total)
 {
     cout << total << endl;

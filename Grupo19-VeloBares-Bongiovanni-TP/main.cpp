@@ -63,10 +63,15 @@ int main() {
 		cerr << "exception->" << NegValue.what();
 	}
 
+	delete Saul;
+	delete LaLolla;
+	delete Mateo;
+	delete josesito;
+
 	return 0;
 }
 
-/**ostream& operator<<(ostream& out, Cliente& Saul)
+/*ostream& operator<<(ostream& out, Cliente& Saul)
 {
 	list<Articulos> ::iterator it = Saul.get_lista().begin();
 	for (it = Saul.get_lista().begin(); it != Saul.get_lista().end(); it++) 
