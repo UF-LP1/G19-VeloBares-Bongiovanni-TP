@@ -16,9 +16,8 @@ public:
  * @param unsigned int num-art
  */
 
-void alquilar(unsigned int numart,  int precio);
+void alquilar(unsigned int numart, int precio);
 
-unsigned int getprecioherramienta();
 void mostrar();
 };
 

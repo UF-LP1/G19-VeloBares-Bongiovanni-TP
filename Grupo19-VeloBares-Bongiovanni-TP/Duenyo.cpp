@@ -71,13 +71,13 @@ float Duenyo::generarPresupuesto(list<Articulos> Lista)
     
     {
         acumprecio = acumprecio + it->getpreciodeart();
-        acumdescuento = acumdescuento + it->getdescuentos(true);
+        acumdescuento = acumdescuento + it->getdescuentos();
     }
 
     total = acumprecio - acumdescuento;
 
     //if(total < 0) throw std::exception("el presupuesto es negativo.");
-    if (total < 0) throw NegValue ( );
+    if (total < 0) throw NegValue ();
 
     return total;
 }
@@ -112,6 +112,7 @@ string Duenyo::getapellidod()
 
 ostream& operator<<(ostream& out, Cliente* General)
 {
+     
      void verprecio(Articulos precioArt);
      list<Articulos> Lista = General->get_lista();
      int _i = 0;
@@ -119,7 +120,7 @@ ostream& operator<<(ostream& out, Cliente* General)
      for (list<Articulos>::iterator it = Lista.begin(); it != Lista.end(); ++it)
      {
          out << it->getpreciodeart() << endl;
-         //out << it->mostrar() << endl;
+         out << it-> mostrar() << endl;
      }
 
      //imprimir virtual

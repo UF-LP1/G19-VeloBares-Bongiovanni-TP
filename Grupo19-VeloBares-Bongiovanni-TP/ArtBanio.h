@@ -17,6 +17,9 @@ public:
  */
 
 void mostrar();
+
+string getcolor();
+
 void elegircolores(string color);
 
 private: 

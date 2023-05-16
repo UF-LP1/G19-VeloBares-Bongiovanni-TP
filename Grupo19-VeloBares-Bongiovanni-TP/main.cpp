@@ -35,7 +35,7 @@ int main() {
 	Articulos a5("Martillo", 0, true, 50, 1, true, true, true);
 	Articulos a6("Tabla",  0, true, 80, 2, true, true, false);
 	Articulos a7("Cortina", 0, false, 190, 3, false, true, false);
-	Articulos a8("Clavo", (-1), true, 55, 4, false, true, true); // depuramos y NO TOMA EL NUMERO NEGATIVO, LO LEVANTA COMO BASURAA
+	Articulos a8("Clavo", -1, true, 55, 4, false, true, true); // depuramos y NO TOMA EL NUMERO NEGATIVO, LO LEVANTA COMO BASURAA
 
 	Mateo->agregarcarrito(a5);
 	Mateo->agregarcarrito(a6);
@@ -47,11 +47,11 @@ int main() {
 	
 	float preciototal = josesito->generarPresupuesto(Saul->get_lista());
 
-	void hacerticket(Ferreteria LaLola, float total);
+	void hacerticket(Ferreteria LaLola);
 	ostream& operator<<(ostream & out, Cliente *Saul);
 	void imprimirtotal(float total);
-	bool chequearenvoltorio(bool envoltorio);
-	void alquilar(unsigned int numart, unsigned int precio);
+	//bool chequearenvoltorio(bool envoltorio);
+	//void alquilar(unsigned int numart, unsigned int precio);
 
 	try
 	{//nunca va a fallar 

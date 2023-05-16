@@ -29,15 +29,14 @@ Articulos::~Articulos()
 
 void Articulos::mostrar()
 {
-    cout << "nombre del Articulo es:" << this->nombreart << endl;
-    cout << "precio del Articulo es:" << this->precio << endl;
-    cout << "repuesto del Articulo es:" << this->repuesto << endl;
-    cout << "tamanio del Articulo es:" << this->tamanyo << endl;
-    cout << "numero del Articulo es:" << this->numart << endl;
-    cout << "envoltorio del Articulo es:" << this->envoltorio << endl;
-    cout << "stock del Articulo es:" << this->stock << endl;
-    cout << "descuento del Articulo es:" << this->descuento << endl;
- 
+   cout << this->getnombreart() << endl;
+   cout << this->getnumerodeart() << endl;
+   cout << this->getpreciodeart () << endl;
+   cout << this->getdescuentos () << endl;
+   cout << this->getrepuesto() << endl;
+   cout << this->getstockproducto() << endl;
+   cout << this->gettamanyo() << endl;
+   
     return;
 }
 
@@ -56,7 +55,7 @@ void Articulos::setpreciodeart( int precio)
  * @return unsigned int
  */
 
-unsigned int Articulos::getnumerodeart(unsigned int numart) 
+unsigned int Articulos::getnumerodeart() 
 {
     return this-> numart;
 }
@@ -66,7 +65,7 @@ unsigned int Articulos::getnumerodeart(unsigned int numart)
  * @return bool
  */
 
-bool Articulos::getstockproducto(bool stock)
+bool Articulos::getstockproducto()
 {
     return false;
 }
@@ -90,15 +89,35 @@ void Articulos::setdescuentos(bool descuento)
     return;
 }
 
-bool Articulos::getdescuentos(bool descuento) 
+bool Articulos::getdescuentos() 
 {
     return false;
 }
 
-unsigned int Articulos::getpreciodeart()
+ int Articulos::getpreciodeart()
 {
     return this-> precio;
 }
+
+ string Articulos::getnombreart()//nombre
+ {
+     return this->nombreart;
+ }
+
+ unsigned int Articulos::gettamanyo()//tamanyo
+ {
+     return this->tamanyo;
+ }
+
+ bool Articulos::getenvoltorio()//envoltorio
+ {
+     return this->envoltorio;
+ }
+
+ bool Articulos::getrepuesto()//repuesto
+ {
+     return this->repuesto;
+ }
 
 bool Articulos::chequearenvoltorio(bool envoltorio)
 {
@@ -110,4 +129,16 @@ bool Articulos::chequearenvoltorio(bool envoltorio)
         cout << "no tiene cambio" << endl;
 
     return false;
+}
+
+int Articulos::cantdeart() 
+{
+    int cant = 0;
+    list<Articulos> Lista;
+    list<Articulos>::iterator it = Lista.begin();
+    for (list<Articulos>::iterator it = Lista.begin(); it != Lista.end(); ++it)
+    {
+        cant++;
+    }
+    return cant;
 }
