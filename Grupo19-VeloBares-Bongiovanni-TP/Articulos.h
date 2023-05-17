@@ -65,7 +65,7 @@ protected:
     unsigned int numart;
     bool envoltorio;
     bool stock;
-    bool descuento;
+    bool descuento; //al fin y al cabo no sirve de nada 
  
 };
 

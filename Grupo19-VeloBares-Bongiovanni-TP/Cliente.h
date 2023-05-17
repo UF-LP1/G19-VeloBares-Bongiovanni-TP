@@ -13,6 +13,7 @@ using namespace std;
 class Cliente {
 public: 
     Cliente(string nombrec_, string domicilio_, unsigned int telefono_, const string dni_, bool permiso_, list<Articulos> Lista_);
+    Cliente(string nombrec_, string domicilio_, unsigned int telefono_, string dni_, bool permiso_);
     ~Cliente();
 /**
  * @param telefono

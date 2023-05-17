@@ -5,6 +5,7 @@
 #include "Ferreteria.h"
 using namespace std;
 #include <string>
+#include <iostream>
 
 /**
  * Ferreteria implementation

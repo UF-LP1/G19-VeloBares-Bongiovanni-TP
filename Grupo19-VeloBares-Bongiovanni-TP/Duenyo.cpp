@@ -53,6 +53,8 @@ string Duenyo::get(string DNI)
 
 void Duenyo::abrirlocal() 
 {
+    cout<<"Bienvenidos a la ferreteria Lalolla, aca se paga solo en efectivo. Te pasamos el presupuesto de lo que desees, para que vuelvas con el efectivo necesario. "<< endl;
+    cout << "Que tenga buen dia :)" << endl; //con esto sabemos que el cliente tiene la plata necesaria para hacer la compra 
     return;
 }
 
@@ -76,7 +78,6 @@ float Duenyo::generarPresupuesto(list<Articulos> Lista)
 
     total = acumprecio - acumdescuento;
 
-    //if(total < 0) throw std::exception("el presupuesto es negativo.");
     if (total < 0) throw NegValue ();
 
     return total;
@@ -116,11 +117,11 @@ ostream& operator<<(ostream& out, Cliente* General)
      void verprecio(Articulos precioArt);
      list<Articulos> Lista = General->get_lista();
      int _i = 0;
-     list<Articulos>::iterator it = Lista.begin();
+     //list<Articulos>::iterator it = Lista.begin();
      for (list<Articulos>::iterator it = Lista.begin(); it != Lista.end(); ++it)
      {
          out << it->getpreciodeart() << endl;
-         out << it-> mostrar() << endl;
+         it->mostrar();
      }
 
      //imprimir virtual
@@ -128,16 +129,16 @@ ostream& operator<<(ostream& out, Cliente* General)
      return out;
 }
 
-void Duenyo:: hacerticket(Ferreteria LaLola)
+void Duenyo:: hacerticket(Ferreteria LaLolla)
 {
-    cout << LaLola.getnombref() << endl;
-    cout << LaLola.getubic( ) << endl;
+    cout << "             " << LaLolla.getnombref() <<  endl;
+    cout << "             " << LaLolla.getubic( ) << endl;
     return;
 }
 
 void Duenyo:: imprimirtotal(float total)
 {
-    cout << total << endl;
+    cout << "El total es:" << total << endl;
     return;
 }
 

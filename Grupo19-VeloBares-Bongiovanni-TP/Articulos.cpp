@@ -19,7 +19,7 @@ Articulos:: Articulos (string nombreart_, int precio_, bool repuesto_, unsigned 
     this->numart = numart_;
     this->envoltorio = envoltorio_;
     this->stock = stock_;
-    this->descuento = descuento_;
+    this->descuento = descuento_; //al fin y al cabo no sirve de nada
  
 }
 
@@ -29,15 +29,9 @@ Articulos::~Articulos()
 
 void Articulos::mostrar()
 {
-   cout << this->getnombreart() << endl;
-   cout << this->getnumerodeart() << endl;
-   cout << this->getpreciodeart () << endl;
-   cout << this->getdescuentos () << endl;
-   cout << this->getrepuesto() << endl;
-   cout << this->getstockproducto() << endl;
-   cout << this->gettamanyo() << endl;
+   cout << "El nombre del articulo es:" << this->getnombreart() << "El numero del articulo es:" << this->getnumerodeart() << "El precio del articulo es:$" << this->getpreciodeart() << this->getdescuentos() << this->getrepuesto() << this->getstockproducto() << "El tamanyo del articulo es:" << this->gettamanyo() << endl;
    
-    return;
+   return;
 }
 
 /**

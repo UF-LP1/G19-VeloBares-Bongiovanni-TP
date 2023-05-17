@@ -8,7 +8,6 @@
 #include "Ferreteria.h"
 #include "Cliente.h"
 #include "customEx.h"
-
 #ifndef _DUENYO_H
 #define _DUENYO_H
 #include <list>
@@ -34,8 +33,6 @@ string get(string DNI);
 void abrirlocal();
 
 float generarPresupuesto(list<Articulos> Lista);
-
-friend ostream& operator<<(ostream& out, Cliente* General);
     
 void atendercliente();
     
@@ -44,11 +41,14 @@ string getnombred();
 void hacerticket(Ferreteria LaLola);
 
 void imprimirtotal(float total);
+
 private: 
     string nombred;
     string DNI;
     string horariotrabajo;
     string apellidod;
 };
+
+ostream& operator<<(ostream& out, Cliente* General);
 
 #endif //_DUENYO_H

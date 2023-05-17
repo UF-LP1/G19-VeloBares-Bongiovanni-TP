@@ -164,7 +164,8 @@
     <ClCompile Include="Martillos.cpp" />
     <ClCompile Include="Mechas.cpp" />
     <ClCompile Include="Plomero.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="main_cpp" />
+    <ClCompile Include="simulacion.cpp" />
     <ClCompile Include="Tablas.cpp" />
     <ClCompile Include="Tenders.cpp" />
   </ItemGroup>

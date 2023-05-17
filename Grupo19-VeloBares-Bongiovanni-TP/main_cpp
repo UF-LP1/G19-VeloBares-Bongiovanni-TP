@@ -1,26 +1,28 @@
-
 #include <iostream>
-#include <math.h>
+#include <list>
+#include <cmath>
+
 #include "Duenyo.h"
 #include "Cliente.h"
 #include "Articulos.h"
 #include "Empleados.h"
 #include "Ferreteria.h"
-#include <list>
 
 using namespace std;
-ostream& operator<<(ostream& out, Cliente& Saul);
+//ostream& operator<<(ostream& out, Cliente& Saul);
 
 /*El cliente entra por la puerta, agarra artículos y los mete al changuito, (puede consultar el precio, fijarse que este en buenas condiciones, pedir cosas del deposito(stock)). 
 Va a la caja a que le cobre el duenyo; este calcula el precio con el descuento, los va sumando y al final le genera un presupuesto (lo imprime para que el cliente lo vea, como un ticket)*/
 
-int main() {
-
+int old_main() {
+	
 	list<Articulos> liista;
 	Ferreteria *LaLolla = new Ferreteria("LaLolla", "av Santa Fe", "8am-18pm", true);
 	Cliente *Saul = new Cliente("Saul", "Lib. 2086", 159976083, "4578932", true, liista);
 	Cliente *Mateo = new Cliente("Mateo", "Heras. 2086", 159978463, "5578932", true, liista);
 	Duenyo *josesito = new Duenyo ("josesito", "4509872", "8am-18pm", "mirabilit");
+
+	josesito-> abrirlocal();
 
 	Articulos a1 ("Martillo", 200, true, 50, 1, true, true, true);
 	Articulos a2("tabla", 1000, true, 80, 2, true, true, false);
@@ -35,27 +37,22 @@ int main() {
 	Articulos a5("Martillo", 0, true, 50, 1, true, true, true);
 	Articulos a6("Tabla",  0, true, 80, 2, true, true, false);
 	Articulos a7("Cortina", 0, false, 190, 3, false, true, false);
-	Articulos a8("Clavo", -1, true, 55, 4, false, true, true); // depuramos y NO TOMA EL NUMERO NEGATIVO, LO LEVANTA COMO BASURAA
+	Articulos a8("Clavo", -1, true, 55, 4, false, true, true); 
 
 	Mateo->agregarcarrito(a5);
 	Mateo->agregarcarrito(a6);
 	Mateo->agregarcarrito(a7);
 	Mateo->agregarcarrito(a8);
-
-	josesito->generarPresupuesto(Saul->get_lista());
-	josesito->generarPresupuesto(Mateo->get_lista());
-	
+	cout << "----------------------------------------------------------------------------------------------" << endl;
 	float preciototal = josesito->generarPresupuesto(Saul->get_lista());
 
-	void hacerticket(Ferreteria LaLola);
-	ostream& operator<<(ostream & out, Cliente *Saul);
-	void imprimirtotal(float total);
-	//bool chequearenvoltorio(bool envoltorio);
-	//void alquilar(unsigned int numart, unsigned int precio);
+	josesito->hacerticket(*LaLolla);
+	cout << Saul << endl;
+	josesito->imprimirtotal(preciototal);
 
 	try
-	{//nunca va a fallar 
-		cout << "el presupuesto es: $" << josesito->generarPresupuesto(Saul->get_lista()) << endl;
+	{ 
+		cout << "El presupuesto total es: $" << josesito->generarPresupuesto(Saul->get_lista()) << endl;
 		cout << "el presupuesto es: $" << josesito->generarPresupuesto(Mateo->get_lista()) << endl;
 	}
 	catch (exception &NegValue)
@@ -70,16 +67,3 @@ int main() {
 
 	return 0;
 }
-
-/*ostream& operator<<(ostream& out, Cliente& Saul)
-{
-	list<Articulos> ::iterator it = Saul.get_lista().begin();
-	for (it = Saul.get_lista().begin(); it != Saul.get_lista().end(); it++) 
-	{
-		unsigned int f = it->getpreciodeart();
-		out << f << endl;
-	}
-
-	return out; }/**/
- //igualaar el iterator al inicio de la lista de saul y con un for imprimir...
- 

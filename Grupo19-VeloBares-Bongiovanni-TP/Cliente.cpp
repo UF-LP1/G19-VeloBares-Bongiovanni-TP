@@ -18,6 +18,15 @@ Cliente::Cliente(string nombrec_, string domicilio_, unsigned int telefono_,  st
     this->Lista = Lista_;  
 }
 
+Cliente::Cliente(string nombrec_, string domicilio_, unsigned int telefono_, string dni_, bool permiso_)
+{
+    this->nombrec = nombrec_;
+    this->domicilio = domicilio_;
+    this->telefono = telefono_;
+    this->dni = dni_;
+    this->permiso = permiso_;
+}
+
 Cliente::~Cliente()
 {
 }
@@ -66,12 +75,6 @@ void Cliente::pedirempleados()
  * @return void
  */
 
-/*void Cliente::pagar(Duenyo josecito)
-{ 
-    // hacer Duenyo.cobrar() en el main, lo guardan en una variable (ej:cobrofinal) y la pasan a pagar de Cliente. 
-    return;
-}*/
-
 /**
  * @return string
  */
@@ -95,7 +98,7 @@ string Cliente::getubicacion()
  * @return void
  */
 
-void Cliente::verprecio(Articulos precioArt) //tiene que poder ver el precio
+void Cliente::verprecio(Articulos precioArt) 
 { 
     int _i=0;
 
