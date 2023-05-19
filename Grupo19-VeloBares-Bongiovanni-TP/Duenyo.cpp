@@ -131,8 +131,8 @@ ostream& operator<<(ostream& out, Cliente* General)
 
 void Duenyo:: hacerticket(Ferreteria LaLolla)
 {
-    cout << "             " << LaLolla.getnombref() <<  endl;
-    cout << "             " << LaLolla.getubic( ) << endl;
+    cout << "                                                    " << LaLolla.getnombref() <<  endl;
+    cout << "                                                    " << LaLolla.getubic( ) << endl;
     return;
 }
 
@@ -141,4 +141,10 @@ void Duenyo:: imprimirtotal(float total)
     cout << "El total es:" << total << endl;
     return;
 }
+
+/*/void Duenyo::conseguirtamanyo()
+{
+    if (bool foto= true)
+        return this->getfoto
+}*/
 

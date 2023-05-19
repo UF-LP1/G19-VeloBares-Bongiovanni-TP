@@ -8,23 +8,25 @@
  * Cliente implementation
  */
 
-Cliente::Cliente(string nombrec_, string domicilio_, unsigned int telefono_,  string dni_, bool permiso_, list<Articulos> Lista_)
+Cliente::Cliente(string nombrec_, string domicilio_, unsigned int telefono_,  string dni_, bool permiso_, bool foto_, list<Articulos> Lista_)
 {
     this->nombrec = nombrec_;
     this->domicilio = domicilio_;
     this->telefono = telefono_;
     this->dni = dni_;
     this->permiso = permiso_;
+    this->foto = foto_;
     this->Lista = Lista_;  
 }
 
-Cliente::Cliente(string nombrec_, string domicilio_, unsigned int telefono_, string dni_, bool permiso_)
+Cliente::Cliente(string nombrec_, string domicilio_, unsigned int telefono_, string dni_, bool permiso_, bool foto_)
 {
     this->nombrec = nombrec_;
     this->domicilio = domicilio_;
     this->telefono = telefono_;
     this->dni = dni_;
     this->permiso = permiso_;
+    this->foto = foto_;
 }
 
 Cliente::~Cliente()
@@ -48,6 +50,11 @@ void Cliente::settelefono(unsigned int telefono)
 
 bool Cliente::getpermiso(bool permiso)
 { 
+    return false;
+}
+
+bool Cliente::getfoto(bool foto)
+{
     return false;
 }
 

@@ -29,7 +29,7 @@ Articulos::~Articulos()
 
 void Articulos::mostrar()
 {
-   cout << "El nombre del articulo es:" << this->getnombreart() << "El numero del articulo es:" << this->getnumerodeart() << "El precio del articulo es:$" << this->getpreciodeart() << this->getdescuentos() << this->getrepuesto() << this->getstockproducto() << "El tamanyo del articulo es:" << this->gettamanyo() << endl;
+   cout << "El nombre del articulo es:" << this->getnombreart() << ",el numero del articulo es:" << this->getnumerodeart() << ",el precio del articulo es:$" << this->getpreciodeart() << this->getdescuentos() << this->getrepuesto() << this->getstockproducto() << ",el tamanyo del articulo es:" << this->gettamanyo() << endl;
    
    return;
 }

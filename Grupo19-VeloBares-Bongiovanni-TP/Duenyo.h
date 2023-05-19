@@ -5,6 +5,7 @@
 #include <string> 
 #include <iostream>
 #include "Articulos.h" 
+#include "ArtHerramienta.h" 
 #include "Ferreteria.h"
 #include "Cliente.h"
 #include "customEx.h"
@@ -42,6 +43,10 @@ void hacerticket(Ferreteria LaLola);
 
 void imprimirtotal(float total);
 
+//void conseguirtamanyo();
+
+void alquilar (ArtHerramienta& herramientas);
+
 private: 
     string nombred;
     string DNI;
@@ -49,6 +54,6 @@ private:
     string apellidod;
 };
 
-ostream& operator<<(ostream& out, Cliente* General);
+ostream& operator<<(ostream& out, Cliente* General); // VAN AFUERA DE LAS CLASES:)
 
 #endif //_DUENYO_H

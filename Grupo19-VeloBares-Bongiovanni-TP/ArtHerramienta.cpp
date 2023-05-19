@@ -36,7 +36,7 @@ void ArtHerramienta::mostrar()
 
 void ArtHerramienta::alquilar(unsigned int numart,  int precio)
 {
-	if (getpreciodeart() > 900)
+	if (getpreciodeart() > 900 && getstockproducto()>0)
 	{
 		cout << "Podrá alquilarla. Se le cobrará un seguro que en caso de devolver en iguales condiciones, se le devolverá." << endl;
 	}
