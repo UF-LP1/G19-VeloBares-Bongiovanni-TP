@@ -35,17 +35,17 @@ void abrirlocal();
 
 float generarPresupuesto(list<Articulos> Lista);
     
-void atendercliente();
+//void atendercliente();
     
 string getnombred();
 
 void hacerticket(Ferreteria LaLola);
 
-void imprimirtotal(float total);
+//void imprimirtotal(float total);
 
-//void conseguirtamanyo();
+friend class Articulos;
 
-void alquilar (ArtHerramienta& herramientas);
+void alquilar(bool stock);
 
 private: 
     string nombred;

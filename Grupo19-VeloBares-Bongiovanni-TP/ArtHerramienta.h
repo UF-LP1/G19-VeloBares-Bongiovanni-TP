@@ -15,9 +15,8 @@ public:
 /**
  * @param unsigned int num-art
  */
- friend class Duenyo; // para usar la funcion alquilar y acceder a los datos.
 
-void alquilar(unsigned int numart, int precio);
+//void alquilar(unsigned int numart, int precio);
 
 void mostrar();
 };

@@ -93,22 +93,22 @@ bool Articulos::getdescuentos()
     return this-> precio;
 }
 
- string Articulos::getnombreart()//nombre
+ string Articulos::getnombreart()
  {
      return this->nombreart;
  }
 
- unsigned int Articulos::gettamanyo()//tamanyo
+ unsigned int Articulos::gettamanyo()
  {
      return this->tamanyo;
  }
 
- bool Articulos::getenvoltorio()//envoltorio
+ bool Articulos::getenvoltorio()
  {
      return this->envoltorio;
  }
 
- bool Articulos::getrepuesto()//repuesto
+ bool Articulos::getrepuesto()
  {
      return this->repuesto;
  }
@@ -135,4 +135,11 @@ int Articulos::cantdeart()
         cant++;
     }
     return cant;
+}
+
+void Articulos::cambios(bool envoltorio)
+{
+    if (envoltorio == true)
+        cout << "Podes realizar tu cambio" << endl;
+    return;
 }

@@ -34,11 +34,11 @@ void ArtHerramienta::mostrar()
 	return;
 }
 
-void ArtHerramienta::alquilar(unsigned int numart,  int precio)
+/*void ArtHerramienta::alquilar(unsigned int numart, int precio)
 {
 	if (getpreciodeart() > 900 && getstockproducto()>0)
 	{
 		cout << "Podrá alquilarla. Se le cobrará un seguro que en caso de devolver en iguales condiciones, se le devolverá." << endl;
 	}
 	return;
-}
+}*/

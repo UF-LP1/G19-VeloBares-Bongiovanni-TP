@@ -93,9 +93,6 @@
     <ClCompile Include="Tenders.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="main_cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="customEx.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>

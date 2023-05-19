@@ -13,6 +13,7 @@
 #include "Empleados.h"
 #include "Ferreteria.h"
 
+//enum dias{lunes=0,martes,miercoles,jueves,viernes,sabado,domingo};
 using namespace std;
 
 const vector<string> nomCli = { // creamos un vector con nombres de clientes random
@@ -37,10 +38,11 @@ stack<Cliente*> generador_clientes(unsigned int cantidad) { //me genero una "pil
 }
 
 int main() {
-    srand(time(NULL)); // simulacion todo randommm
+    srand(time(NULL)); //simulacion todo randommm
 	
     stack<Cliente*> MisClientes = generador_clientes(10); //lista de 10 clientes qu entraran hoy
-    bool flag = true; // ferretería abierta
+	//se van a imprimir 10 clientes distintos pero con los mismos articulos porque nostras los declaramos 
+    bool flag = true; //ferretería abierta
     unsigned int hora = 8; //arrancamos el dia a las 8 de la mañana
 
 	list<Articulos> liista;
@@ -53,17 +55,16 @@ int main() {
 	ArtFerreteria a2("tabla", 1000, true, 80, 2, true, true, false);
 	ArtCerrajeria a3("Cortina", 88, false, 190, 3, false, true, false);
 	ArtElectricidad a4("Clavo", 300, true, 55, 4, false, true, true);
-	bool alquiler = 1;
-	
+	bool alquiler=false;
+	bool hacercambios = false;
     while (!(MisClientes.empty()) && flag) { //mientras tenga clientes y la ferreteria esté abierta, van a ocurrir cosas de ferreteria
 		
-	cout<<"Desea alquilar una herramienta? Ponga 1 si lo desea, 0 si NO lo desea."<< endl;
+    /*cout << "Desea alquilar una herramienta? Ponga 1 si lo desea, 0 si NO lo desea." << endl;
 	cin >> alquiler ;
 	if (alquiler == 1)
 	{
-		//&ArtHerramienta:: alquilar;
-		josesito-> alquilar(); //TERMINAR
-	}
+		josesito->alquilar(alquiler); 
+	}*/
 		
 		Cliente* miCliente = MisClientes.top();
 		MisClientes.pop();
@@ -74,11 +75,23 @@ int main() {
 		miCliente->agregarcarrito(a4);
 
 		cout << "----------------------------------------------------------------------------------------------" << endl;
+		
+		cout << "Desea alquilar una herramienta? Ponga 1 si lo desea, 0 si NO lo desea." << endl;
+		cin >> hacercambios;
+		if (hacercambios == true)
+		{
+			miCliente->cambios(hacercambios);
+		}
+
+		LaLolla->llamarcerrajero();
+		LaLolla->llamardespachante();
+		LaLolla->llamarplomero();
+
 		float preciototal = josesito->generarPresupuesto(miCliente->get_lista());
 
 		josesito->hacerticket(*LaLolla);
 		cout << miCliente << endl;
-		josesito->imprimirtotal(preciototal);
+		//josesito->imprimirtotal(preciototal);//sino se imprime dos veces el total
 
 		try
 		{

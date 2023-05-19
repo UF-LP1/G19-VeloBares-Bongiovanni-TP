@@ -8,25 +8,25 @@
  * Cliente implementation
  */
 
-Cliente::Cliente(string nombrec_, string domicilio_, unsigned int telefono_,  string dni_, bool permiso_, bool foto_, list<Articulos> Lista_)
+Cliente::Cliente(string nombrec_, string domicilio_, unsigned int telefono_,  string dni_, bool permiso_,  list<Articulos> Lista_)
 {
     this->nombrec = nombrec_;
     this->domicilio = domicilio_;
     this->telefono = telefono_;
     this->dni = dni_;
     this->permiso = permiso_;
-    this->foto = foto_;
+    //this->foto = foto_;
     this->Lista = Lista_;  
 }
 
-Cliente::Cliente(string nombrec_, string domicilio_, unsigned int telefono_, string dni_, bool permiso_, bool foto_)
+Cliente::Cliente(string nombrec_, string domicilio_, unsigned int telefono_, string dni_, bool permiso_)
 {
     this->nombrec = nombrec_;
     this->domicilio = domicilio_;
     this->telefono = telefono_;
     this->dni = dni_;
     this->permiso = permiso_;
-    this->foto = foto_;
+    //this->foto = foto_;
 }
 
 Cliente::~Cliente()
@@ -53,10 +53,10 @@ bool Cliente::getpermiso(bool permiso)
     return false;
 }
 
-bool Cliente::getfoto(bool foto)
+/*bool Cliente::getfoto(bool foto)
 {
     return false;
-}
+}*/
 
 /**
  * @param unsigned int num-art
@@ -134,6 +134,21 @@ void Cliente::agregarcarrito(Articulos a4)
 
     return;
 }
+
+void Cliente::cambios(bool envoltorio)
+{
+    if (envoltorio == true)
+        cout << "Podes realizar tu cambio" << endl;
+    else
+        cout << "No podes realizar el cambio" << endl;
+    return;
+}
+
+/*bool Cliente::conseguirrepuesto()
+{
+    if (bool foto = true)
+        return this->repuesto;
+}*/
 
 
 

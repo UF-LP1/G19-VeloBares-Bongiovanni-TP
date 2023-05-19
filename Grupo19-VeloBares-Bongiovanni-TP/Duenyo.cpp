@@ -92,10 +92,10 @@ float Duenyo::generarPresupuesto(list<Articulos> Lista)
  * @return void
  */
 
-void Duenyo::atendercliente() 
+/*void Duenyo::atendercliente() //no varia 
 {
     return;
-}
+}*/
 
 /**
  * @return string
@@ -136,15 +136,20 @@ void Duenyo:: hacerticket(Ferreteria LaLolla)
     return;
 }
 
-void Duenyo:: imprimirtotal(float total)
+/*void Articulos::alquilar(bool stock)
+{
+    if (900 < getpreciodeart() && getstockproducto() = true)
+    {
+        cout << "Podrá alquilarla. Se le cobrará un seguro que en caso de devolver en iguales condiciones, se le devolverá." << endl;
+    }
+    return;
+}*/
+
+/*void Duenyo::imprimirtotal(float total)
 {
     cout << "El total es:" << total << endl;
     return;
-}
-
-/*/void Duenyo::conseguirtamanyo()
-{
-    if (bool foto= true)
-        return this->getfoto
 }*/
+
+
 

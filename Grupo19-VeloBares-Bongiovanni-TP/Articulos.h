@@ -17,7 +17,7 @@ public:
  * @param precio
  */;
 
-virtual void mostrar(); //agregamos virtual
+virtual void mostrar(); 
 
 void setpreciodeart( int precio);
     
@@ -43,19 +43,23 @@ void setdescuentos(bool descuento);
 
 bool getdescuentos();
 
- int getpreciodeart();
+int getpreciodeart();
 
 bool chequearenvoltorio(bool envoltorio);
 
-static int cantdeart(); //agregamos static
+static int cantdeart(); 
 
-string getnombreart();//nombre
+string getnombreart();
 
-unsigned int gettamanyo();//tamanyo
+unsigned int gettamanyo();
 
-bool getenvoltorio();//envoltorio
+bool getenvoltorio();
 
-bool getrepuesto();//repuesto
+bool getrepuesto();
+
+void cambios(bool envoltorio);
+
+void alquilar(bool stock);
 
 protected:   
     string nombreart;

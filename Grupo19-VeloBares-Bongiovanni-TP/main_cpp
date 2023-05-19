@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <list>
 #include <cmath>
 
@@ -66,4 +66,4 @@ int old_main() {
 	delete josesito;
 
 	return 0;
-}
+}*/
