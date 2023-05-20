@@ -2,12 +2,10 @@
  * Project Untitled
  */
 
-
 #ifndef _CERRAJERO_H
 #define _CERRAJERO_H
 
 #include "Empleados.h"
-
 
 class Cerrajero: public Empleados {
 public: 
@@ -17,10 +15,10 @@ public:
 /**
  * @param enum tipo llave
  */
+
 void copiarllaves(enum tipo llave);
     
 void arreglecerraduras();
-
 
 };
 

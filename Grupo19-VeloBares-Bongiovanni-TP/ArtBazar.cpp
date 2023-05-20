@@ -4,6 +4,7 @@
 
 #include "ArtBazar.h"
 #include <iostream>
+
 /**
  * ArtBazar implementation
  */
@@ -37,7 +38,6 @@ void ArtBazar::mostrar()
     cout << this->getstockproducto() << endl;
     cout << this->gettamanyo() << endl;
     cout << this->getestado() << endl;
-
    
 	return;
 }

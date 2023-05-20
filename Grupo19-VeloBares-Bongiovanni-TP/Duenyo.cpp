@@ -92,11 +92,6 @@ float Duenyo::generarPresupuesto(list<Articulos> Lista)
  * @return void
  */
 
-/*void Duenyo::atendercliente() //no varia 
-{
-    return;
-}*/
-
 /**
  * @return string
  */
@@ -117,7 +112,7 @@ ostream& operator<<(ostream& out, Cliente* General)
      void verprecio(Articulos precioArt);
      list<Articulos> Lista = General->get_lista();
      int _i = 0;
-     //list<Articulos>::iterator it = Lista.begin();
+  
      for (list<Articulos>::iterator it = Lista.begin(); it != Lista.end(); ++it)
      {
          out << it->getpreciodeart() << endl;
@@ -145,11 +140,7 @@ void Duenyo:: hacerticket(Ferreteria LaLolla)
     return;
 }*/
 
-/*void Duenyo::imprimirtotal(float total)
-{
-    cout << "El total es:" << total << endl;
-    return;
-}*/
+
 
 
 

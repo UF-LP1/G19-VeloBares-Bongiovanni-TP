@@ -1,7 +1,6 @@
 /**
  * Project Untitled
  */
-
  
 #ifndef _EMPLEADOS_H
 #define _EMPLEADOS_H
@@ -17,25 +16,28 @@ public:
 /**
  * @param preciotrabajo
  */;
+
 void set(unsigned int preciotrabajo);
     
 /**
  * @param disponible
  */
-bool set(bool disponible);
+
+void set(bool disponible);
     
 /**
  * @param horariodeatencion
  */
+
 void set(string horariodeatencion);
     
 string getnombree();
-    
-void definirfecha(); 
 
 string getapellidos();
 
 unsigned int getdnis();
+    
+void definirfecha(); 
 
 protected: 
     string nombree;
@@ -47,4 +49,4 @@ protected:
     string duracion;
 };
 
-#endif //_EMPLEADOS_H
+#endif //_EMPLEADOS_;H

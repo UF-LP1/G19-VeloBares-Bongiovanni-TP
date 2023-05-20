@@ -2,13 +2,11 @@
  * Project Untitled
  */
 
-
 #include "Plomero.h"
 
 /**
  * Plomero implementation
  */
-
 
 /**
  * @return void

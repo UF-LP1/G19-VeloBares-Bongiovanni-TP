@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #ifndef _ARTBAZAR_H
 #define _ARTBAZAR_H
 #include "Articulos.h"
@@ -10,7 +9,7 @@
 
 class ArtBazar: public Articulos {
 public: 
-   ArtBazar( bazar estado_, string nombreart_, int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_);
+   ArtBazar(bazar estado_, string nombreart_, int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_);
    ~ArtBazar();
     
 /**
@@ -18,7 +17,9 @@ public:
  */
 
 bazar getestado();
+
 void mostrar();
+
 void comprobarestado(bazar estado);
 
 private: 

@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #ifndef _DESPACHANTE_H
 #define _DESPACHANTE_H
 
@@ -15,9 +14,7 @@ public:
     ~Despachante();
     
 void entregarproducto(Cliente Camila);
-
-
-    
+  
 /**
  * @param transporte
  */

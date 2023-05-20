@@ -15,7 +15,6 @@ Cliente::Cliente(string nombrec_, string domicilio_, unsigned int telefono_,  st
     this->telefono = telefono_;
     this->dni = dni_;
     this->permiso = permiso_;
-    //this->foto = foto_;
     this->Lista = Lista_;  
 }
 
@@ -26,7 +25,6 @@ Cliente::Cliente(string nombrec_, string domicilio_, unsigned int telefono_, str
     this->telefono = telefono_;
     this->dni = dni_;
     this->permiso = permiso_;
-    //this->foto = foto_;
 }
 
 Cliente::~Cliente()
@@ -52,11 +50,6 @@ bool Cliente::getpermiso(bool permiso)
 { 
     return false;
 }
-
-/*bool Cliente::getfoto(bool foto)
-{
-    return false;
-}*/
 
 /**
  * @param unsigned int num-art
@@ -144,11 +137,7 @@ void Cliente::cambios(bool envoltorio)
     return;
 }
 
-/*bool Cliente::conseguirrepuesto()
-{
-    if (bool foto = true)
-        return this->repuesto;
-}*/
+
 
 
 

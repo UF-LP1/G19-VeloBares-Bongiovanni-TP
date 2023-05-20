@@ -23,16 +23,12 @@ void settelefono(unsigned int telefono);
 /**
  * @param permiso
  */
-bool getpermiso(bool permiso);
 
-//bool getfoto(bool foto);
+bool getpermiso(bool permiso);
     
 /**
  * @param unsigned int num-art
  */
-void comprarart( unsigned int numart);
-    
-void pedirempleados();
     
 /**
  * @param Duenyo.cobrar
@@ -48,15 +44,17 @@ string getubicacion();
   
 void verprecio(Articulos precioArt);
 
-//bool conseguirrepuesto();
-
 list<Articulos> get_lista();
 
 void agregarcarrito(Articulos a4);
 
-friend class Duenyo;
-
 void cambios(bool envoltorio);
+
+void comprarart(unsigned int numart);
+
+void pedirempleados();
+
+friend class Duenyo;
 
 private: 
     string nombrec;
@@ -64,7 +62,6 @@ private:
     unsigned int telefono;
     string dni;
     bool permiso;
-   // bool foto;
     list<Articulos> Lista;
 };
 

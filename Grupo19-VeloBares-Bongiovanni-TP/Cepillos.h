@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #ifndef _CEPILLOS_H
 #define _CEPILLOS_H
 
@@ -14,6 +13,7 @@ private:
 
     Cepillos(cerdas tipodecerdas_, string nombreart_, string color,  int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_);
     ~Cepillos();
+
     cerdas tipodecerdas;
 };
 

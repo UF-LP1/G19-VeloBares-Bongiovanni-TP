@@ -40,9 +40,9 @@ void Empleados::set(unsigned int preciotrabajo)
  * @return bool
  */
 
-bool Empleados::set(bool disponible) 
+void Empleados::set(bool disponible) 
 { 
-    return false;
+    return;
 }
 
 /**

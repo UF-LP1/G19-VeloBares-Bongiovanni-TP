@@ -27,6 +27,7 @@ string ArtBanio:: getcolor()
 {
 	return this->color;
 }
+
 void ArtBanio::mostrar()
 {
 	cout << this->getnombreart() << endl;

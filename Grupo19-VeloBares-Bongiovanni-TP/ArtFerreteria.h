@@ -2,12 +2,10 @@
  * Project Untitled
  */
 
-
 #ifndef _ARTFERRETERIA_H
 #define _ARTFERRETERIA_H
 
 #include "Articulos.h"
-
 
 class ArtFerreteria: public Articulos {
 public: 

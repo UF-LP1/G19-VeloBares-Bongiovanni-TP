@@ -18,9 +18,12 @@ public:
 /**
  * @param ubicacion
  */
+
 void setubic(string ubicacion);
 
 void setabierto(bool abierto);
+
+void sethora(string horario);
     
 void llamarcerrajero();
     
@@ -31,8 +34,6 @@ void llamardespachante();
 string getnombref();
 
 string getubic();
-
-void sethora(string horario);
     
 /**
  * @param horario
@@ -42,8 +43,7 @@ private:
     string nombref;
     string ubicacion;
     string horario;
-    bool abierto;
-    
+    bool abierto;    
 };
 
 #endif //_FERRETERIA_H

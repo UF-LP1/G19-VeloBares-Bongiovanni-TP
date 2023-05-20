@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #ifndef _ENCHUFES_H
 #define _ENCHUFES_H
 
@@ -14,6 +13,7 @@ private:
 
     Enchufes(patas tipodepatas_, string nombreart_, int precio_, bool repuesto_, unsigned int tamanyo_, unsigned int numart_, bool envoltorio_, bool stock_, bool descuento_);
     ~Enchufes();
+
     patas tipodepatas;
 };
 

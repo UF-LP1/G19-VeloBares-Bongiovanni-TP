@@ -25,7 +25,7 @@ const vector<string> dirCli = { //lo mismo pero con direcciones
 };
 
 unsigned int randint(unsigned int min, unsigned int max) {
-    return rand() % (max - min) + min; //
+    return rand() % (max - min) + min; 
 }
 
 stack<Cliente*> generador_clientes(unsigned int cantidad) { //me genero una "pila" de clientes  con todos sus atributos random
@@ -59,13 +59,6 @@ int main() {
 	bool hacercambios = false;
     while (!(MisClientes.empty()) && flag) { //mientras tenga clientes y la ferreteria esté abierta, van a ocurrir cosas de ferreteria
 		
-    /*cout << "Desea alquilar una herramienta? Ponga 1 si lo desea, 0 si NO lo desea." << endl;
-	cin >> alquiler ;
-	if (alquiler == 1)
-	{
-		josesito->alquilar(alquiler); 
-	}*/
-		
 		Cliente* miCliente = MisClientes.top();
 		MisClientes.pop();
 
@@ -75,8 +68,16 @@ int main() {
 		miCliente->agregarcarrito(a4);
 
 		cout << "----------------------------------------------------------------------------------------------" << endl;
-		
-		cout << "Desea alquilar una herramienta? Ponga 1 si lo desea, 0 si NO lo desea." << endl;
+
+		//Justoo antes de entregar salto un error y pensamos que era mejor comentarlo 
+		/*cout << "Desea alquilar una herramienta? Ponga 1 si lo desea, 0 si NO lo desea." << endl;
+		cin >> alquiler ;
+		if (alquiler == 1)
+		{
+		josesito->alquilar(alquiler); 
+		}*/
+
+		cout << "Desea hacer un cambio? Ponga 1 si lo desea, 0 si NO lo desea." << endl;
 		cin >> hacercambios;
 		if (hacercambios == true)
 		{
@@ -91,7 +92,6 @@ int main() {
 
 		josesito->hacerticket(*LaLolla);
 		cout << miCliente << endl;
-		//josesito->imprimirtotal(preciototal);//sino se imprime dos veces el total
 
 		try
 		{

@@ -19,7 +19,9 @@ public:
 
 virtual void mostrar(); 
 
-void setpreciodeart( int precio);
+void setpreciodeart(int precio);
+
+void setdescuentos(bool descuento);
     
 /**
  * @param num-art
@@ -33,21 +35,13 @@ unsigned int getnumerodeart();
 
 bool getstockproducto();
     
-void reponerstock();
-    
 /**
  * @param descuento
  */
 
-void setdescuentos(bool descuento);
-
 bool getdescuentos();
 
 int getpreciodeart();
-
-bool chequearenvoltorio(bool envoltorio);
-
-static int cantdeart(); 
 
 string getnombreart();
 
@@ -56,6 +50,12 @@ unsigned int gettamanyo();
 bool getenvoltorio();
 
 bool getrepuesto();
+
+void reponerstock();
+
+bool chequearenvoltorio(bool envoltorio);
+
+static int cantdeart(); 
 
 void cambios(bool envoltorio);
 
@@ -70,7 +70,6 @@ protected:
     bool envoltorio;
     bool stock;
     bool descuento; //al fin y al cabo no sirve de nada 
- 
 };
 
 #endif //_ARTICULOS_H

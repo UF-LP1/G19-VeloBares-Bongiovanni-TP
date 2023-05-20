@@ -17,6 +17,7 @@ class Duenyo {
 public: 
    Duenyo(string nombred_,  string DNI_, string horariotrabajo_, string apellidod_);
    ~Duenyo();
+
 /**
  * @param horariotrabajo
  */
@@ -31,21 +32,17 @@ string getapellidod();
 
 string get(string DNI);
     
-void abrirlocal();
-
-float generarPresupuesto(list<Articulos> Lista);
-    
-//void atendercliente();
-    
 string getnombred();
 
 void hacerticket(Ferreteria LaLola);
 
-//void imprimirtotal(float total);
+void abrirlocal();
 
-friend class Articulos;
+float generarPresupuesto(list<Articulos> Lista);
 
 void alquilar(bool stock);
+
+friend class Articulos;
 
 private: 
     string nombred;
@@ -54,6 +51,6 @@ private:
     string apellidod;
 };
 
-ostream& operator<<(ostream& out, Cliente* General); // VAN AFUERA DE LAS CLASES:)
+ostream& operator<<(ostream& out, Cliente* General);
 
 #endif //_DUENYO_H
